@@ -1,16 +1,8 @@
 [gd_scene format=3 uid="uid://bil8s71oxw13e"]
 
-[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_8gbba"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="2_bo1nx"]
 
 [node name="Main" type="Node2D" unique_id=1546595295]
-
-[node name="Platform" parent="." unique_id=1485412247 instance=ExtResource("2_8gbba")]
-position = Vector2(181, 417)
-
-[node name="Platform2" parent="." unique_id=200109188 instance=ExtResource("2_8gbba")]
-position = Vector2(384, 417)
-color = Color(1, 1, 1, 1)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("2_bo1nx")]
 position = Vector2(275, 68)

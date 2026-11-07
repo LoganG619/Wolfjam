@@ -1,6 +1,46 @@
 [gd_scene format=3 uid="uid://cqpcd2n5556b3"]
 
 [ext_resource type="Script" uid="uid://beehg1bfupk8x" path="res://Scenes/level_1.gd" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="3_7p6j4"]
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="4_6444e"]
+[ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_evi0p"]
+[ext_resource type="PackedScene" uid="uid://dbqwrukmrtwcx" path="res://Objects/falling_platform.tscn" id="5_evi0p"]
+[ext_resource type="PackedScene" uid="uid://cg5sl87r0weqv" path="res://Objects/RedLazer.tscn" id="6_evi0p"]
+[ext_resource type="PackedScene" uid="uid://b4hwbynw63cc3" path="res://Objects/yellow_platform.tscn" id="7_chwpn"]
+[ext_resource type="PackedScene" uid="uid://ds8jv1t3ygntl" path="res://Objects/bouncy_platform.tscn" id="7_lsmp6"]
+[ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="8_af3po"]
 
 [node name="Level1" type="Node2D" unique_id=189787590]
 script = ExtResource("1_vk57k")
+startingColor = Color(0, 0, 1, 1)
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("4_6444e")]
+position = Vector2(347, -107)
+max_speed = 1000.0
+acceleration = 100000000.0
+deceleration = 100000000.0
+jumpVelocity = -1500.0
+jump_velocity = -1500.0
+
+[node name="RedPlatform" parent="." unique_id=1554530130 instance=ExtResource("4_evi0p")]
+position = Vector2(191, 194)
+
+[node name="BluePlatform2" parent="." unique_id=477687852 instance=ExtResource("3_7p6j4")]
+position = Vector2(395, 193)
+
+[node name="RedLazer" parent="." unique_id=356302544 instance=ExtResource("6_evi0p")]
+position = Vector2(530, -8)
+
+[node name="YellowPlatform" parent="." unique_id=873667673 instance=ExtResource("7_chwpn")]
+position = Vector2(-220, 193)
+
+[node name="GreenPlatform" parent="." unique_id=1506142544 instance=ExtResource("8_af3po")]
+position = Vector2(-424, 193)
+
+[node name="BouncyPlatform" parent="." unique_id=795339104 instance=ExtResource("7_lsmp6")]
+position = Vector2(-733, 526)
+color = Color(1, 0, 0, 1)
+
+[node name="FallingPlatform" parent="." unique_id=270998160 instance=ExtResource("5_evi0p")]
+position = Vector2(-1240, 474)
+color = Color(1, 0, 0, 1)

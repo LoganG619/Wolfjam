@@ -13,16 +13,24 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("SwapToBlack") and canSwap == true:
+	if Input.is_action_just_pressed("SwapToRed") and canSwap == true:
 		curColor = red
 		canSwap = false
 		swapCooldown()
 		
-	elif Input.is_action_just_pressed("SwapToWhite") and canSwap == true:
+	elif Input.is_action_just_pressed("SwapToBlue") and canSwap == true:
 		curColor = blue
+		canSwap = false
+		swapCooldown()
+	elif Input.is_action_just_pressed("SwapToGreen") and canSwap == true:
+		curColor = green
+		canSwap = false
+		swapCooldown()
+	elif Input.is_action_just_pressed("SwapToYellow") and canSwap == true:
+		curColor = yellow
 		canSwap = false
 		swapCooldown()
 	
 func swapCooldown():
-	await get_tree().create_timer(.4).timeout
+	await get_tree().create_timer(.3).timeout
 	canSwap = true

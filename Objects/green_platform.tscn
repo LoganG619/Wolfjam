@@ -35,11 +35,11 @@ size = Vector2i(1024, 1024)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=300573012]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -100, 0.39968765, -101.10775)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 500, 0.39968765, 0)
 projection = 1
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1878154288]
-transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 3.5533972, -5.2345676)
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 500, 3.5533972, 0)
 light_energy = 0.1
 light_indirect_energy = 9.38
 light_volumetric_fog_energy = 0.0
@@ -47,4 +47,4 @@ light_angular_distance = 90.0
 light_specular = 0.0
 
 [node name="Colored Cubes3" parent="SubViewportContainer/SubViewport" unique_id=1210829814 instance=ExtResource("3_mwtgc")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -100.47268, 0, -100)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 499.5264, 0, 0.4603365)
