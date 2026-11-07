@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://drcxxmopppygd"]
+
+[ext_resource type="PackedScene" uid="uid://cdwelwnr3fcv8" path="res://Assets/Spikes/Cystal Spike1.glb" id="1_baso2"]
+[ext_resource type="PackedScene" uid="uid://bkyyedieo3lcy" path="res://Assets/Spikes/Cystal Spike2.glb" id="2_ijug2"]
+[ext_resource type="PackedScene" uid="uid://doq8w62e3t5ik" path="res://Assets/Spikes/Cystal Spike3.glb" id="3_pb5fb"]
+[ext_resource type="PackedScene" uid="uid://b46xx15a7vx10" path="res://Assets/Spikes/Cystal Spike4.glb" id="4_yuy0u"]
+[ext_resource type="PackedScene" uid="uid://byxkbde4qr50n" path="res://Assets/Spikes/Cystal Spike5.glb" id="5_0qqtr"]
+
+[node name="Node3D" type="Node3D" unique_id=1569322757]
+
+[node name="Cystal Spike1" parent="." unique_id=1816175577 instance=ExtResource("1_baso2")]
+
+[node name="Cystal Spike2" parent="." unique_id=1422092861 instance=ExtResource("2_ijug2")]
+
+[node name="Cystal Spike3" parent="." unique_id=1879951636 instance=ExtResource("3_pb5fb")]
+
+[node name="Cystal Spike4" parent="." unique_id=1804838450 instance=ExtResource("4_yuy0u")]
+
+[node name="Cystal Spike5" parent="." unique_id=1049127152 instance=ExtResource("5_0qqtr")]
