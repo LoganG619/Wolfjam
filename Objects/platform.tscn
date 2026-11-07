@@ -7,7 +7,6 @@
 size = Vector2(128, 128)
 
 [node name="Platform" type="RigidBody2D" unique_id=1485412247]
-visible = false
 gravity_scale = 0.0
 script = ExtResource("1_08hf0")
 

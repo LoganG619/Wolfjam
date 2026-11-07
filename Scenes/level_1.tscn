@@ -1,6 +1,46 @@
 [gd_scene format=3 uid="uid://cqpcd2n5556b3"]
 
-[ext_resource type="Script" uid="uid://beehg1bfupk8x" path="res://level_1.gd" id="1_vk57k"]
+[ext_resource type="Script" uid="uid://beehg1bfupk8x" path="res://Scenes/level_1.gd" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://b3ha1bs4iqr7g" path="res://Characters/player.tscn" id="2_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/platform.tscn" id="3_7p6j4"]
+[ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/spike.tscn" id="4_7p6j4"]
 
 [node name="Level1" type="Node2D" unique_id=189787590]
 script = ExtResource("1_vk57k")
+
+[node name="Player" parent="." unique_id=1471283222 instance=ExtResource("2_xfk5q")]
+position = Vector2(93, 164)
+max_speed = 2500.0
+acceleration = 800.0
+deceleration = 600.0
+coyote_time = 0.3
+
+[node name="Platforms" type="CanvasGroup" parent="." unique_id=650934149]
+position = Vector2(322, 350)
+
+[node name="Platform3" parent="Platforms" unique_id=1356820034 instance=ExtResource("3_7p6j4")]
+position = Vector2(-385, 0)
+color = Color(1, 1, 1, 1)
+
+[node name="Platform" parent="Platforms" unique_id=1485412247 instance=ExtResource("3_7p6j4")]
+position = Vector2(-257, 0)
+color = Color(1, 1, 1, 1)
+
+[node name="Platform9" parent="Platforms" unique_id=1838001592 instance=ExtResource("3_7p6j4")]
+position = Vector2(769, -5)
+
+[node name="Platform2" parent="Platforms" unique_id=922572358 instance=ExtResource("3_7p6j4")]
+position = Vector2(-128, 0)
+
+[node name="Platform7" parent="Platforms" unique_id=1401609655 instance=ExtResource("3_7p6j4")]
+position = Vector2(513, -81)
+color = Color(1, 1, 1, 1)
+
+[node name="Platform5" parent="Platforms" unique_id=2085317094 instance=ExtResource("3_7p6j4")]
+position = Vector2(255, -43)
+color = Color(1, 1, 1, 1)
+
+[node name="Spikes" type="CanvasGroup" parent="." unique_id=4764796]
+
+[node name="Spike" parent="Spikes" unique_id=1057256729 instance=ExtResource("4_7p6j4")]
+position = Vector2(835, 173)
