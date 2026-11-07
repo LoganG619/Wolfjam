@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b425q1d4fu3fp"]
+
+[ext_resource type="Texture2D" uid="uid://b27hbswhww0a7" path="res://Art/YellowBackground.png" id="1_or44u"]
+[ext_resource type="Script" uid="uid://cxdufp180ul24" path="res://Scenes/yellow_background.gd" id="2_pnij4"]
+
+[node name="YellowBackground" type="Sprite2D" unique_id=1745360672]
+texture = ExtResource("1_or44u")
+script = ExtResource("2_pnij4")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://556igb2vly6s"]
+
+[ext_resource type="Texture2D" uid="uid://csdk4k71kelr1" path="res://Art/RedBackground.png" id="1_bho3c"]
+[ext_resource type="Script" uid="uid://bmgxeal1mimss" path="res://red_background.gd" id="2_rv2dl"]
+
+[node name="RedBackground" type="Sprite2D" unique_id=336213773]
+texture = ExtResource("1_bho3c")
+script = ExtResource("2_rv2dl")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dncytelib2btv"]
+
+[ext_resource type="Texture2D" uid="uid://7wcqptldja4d" path="res://Art/GreenBackground.png" id="1_6fv8d"]
+[ext_resource type="Script" uid="uid://ebswrfd3da7f" path="res://Scenes/green_background.gd" id="2_wj06g"]
+
+[node name="GreenBackground" type="Sprite2D" unique_id=1380163244]
+texture = ExtResource("1_6fv8d")
+script = ExtResource("2_wj06g")

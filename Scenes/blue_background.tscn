@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bjq3mtkb4w3vk"]
+
+[ext_resource type="Texture2D" uid="uid://dmxsdaexfsq0f" path="res://Art/BlueBackground.png" id="1_5ao40"]
+[ext_resource type="Script" uid="uid://cd5nlsobyjcrs" path="res://Scenes/blue_background.gd" id="2_ic78f"]
+
+[node name="BlueBackground" type="Sprite2D" unique_id=1933368043]
+texture = ExtResource("1_5ao40")
+script = ExtResource("2_ic78f")
