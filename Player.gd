@@ -22,8 +22,13 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		anim.play("Anim/Sprint_Loop")
+		anim.play("Armature|Sprint")
+		
+		if direction > 0:
+			player.rotation.y = PI/2
+		else:
+			player.rotation.y = -PI/2
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		anim.play("Armature/Idle")
+		anim.play("Armature|Idle")
 	move_and_slide()
