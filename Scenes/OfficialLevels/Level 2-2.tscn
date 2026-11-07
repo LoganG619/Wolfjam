@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_55n7i"]
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_u438i"]
 [ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="6_kg55b"]
+[ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="7_0d10s"]
 
 [node name="Level22" type="Node2D" unique_id=1219447015]
 
@@ -62,3 +63,7 @@ position = Vector2(1851, -484)
 
 [node name="GreenSpike" parent="." unique_id=1722556171 instance=ExtResource("6_kg55b")]
 position = Vector2(1855, -622)
+
+[node name="DeathBox" parent="." unique_id=46704787 instance=ExtResource("7_0d10s")]
+position = Vector2(5, 1303)
+scale = Vector2(42.320004, 1)
