@@ -5,6 +5,7 @@ extends Area2D
 
 @onready var sprite = $Sprite2D
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var timer = Timer.new()
@@ -23,7 +24,7 @@ func _process(delta: float) -> void:
 		visible = false
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.has_method("die"):
+	if body.has_method("die") and $Sprite.is_visible_in_tree():
 		body.die()
 		
 		
