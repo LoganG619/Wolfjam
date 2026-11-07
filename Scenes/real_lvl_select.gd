@@ -16,9 +16,10 @@ func _unlock_level(level_to_unlock: int) -> void:
 		
 func _load_level(level_to_load: int) -> String:
 	if level_to_load > max_level:
-			return " "
-	return str(" ", level_to_load, " ")
+			return "res://Scenes/Lvl Select screen.tscn "
+	return str("res://Scenes/OfficialLevels/Level 1-"+str(level_to_load)+".tscn" )
 		
+
 
 
 # Called when the node enters the scene tree for the first time.

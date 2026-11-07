@@ -15,7 +15,7 @@ func _ready() -> void:
 func _pressed() -> void:
 	if is_unlocked:
 		RealLvlSelect.current_level = level
-		get_tree().call_deffered("change_scene_to_file", RealLvlSelect._load_level(level))
+		get_tree().call_deferred("change_scene_to_file", RealLvlSelect._load_level(level))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
