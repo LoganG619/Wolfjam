@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cteoef1rvmr6r"]
+
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_wd5by"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_d8kw5"]
+[ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="3_d8kw5"]
+
+[node name="Level11" type="Node2D" unique_id=746582650]
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_wd5by")]
+position = Vector2(172, 376)
+max_speed = 1000.0
+acceleration = 100000.0
+deceleration = 100000.0
+jumpVelocity = -1500.0
+
+[node name="BluePlatform" parent="." unique_id=1485412247 instance=ExtResource("2_d8kw5")]
+position = Vector2(156, 637)
+
+[node name="BluePlatform2" parent="." unique_id=1855008690 instance=ExtResource("2_d8kw5")]
+position = Vector2(362, 637)
+
+[node name="BluePlatform3" parent="." unique_id=2132565653 instance=ExtResource("2_d8kw5")]
+position = Vector2(563, 637)
+
+[node name="BluePlatform4" parent="." unique_id=795547588 instance=ExtResource("2_d8kw5")]
+position = Vector2(763, 637)
+
+[node name="RedPlatform" parent="." unique_id=764492286 instance=ExtResource("3_d8kw5")]
+position = Vector2(1237, 626)
+
+[node name="RedPlatform2" parent="." unique_id=1893293697 instance=ExtResource("3_d8kw5")]
+position = Vector2(1445, 623)
