@@ -10,9 +10,9 @@ script = ExtResource("1_vk57k")
 
 [node name="Player" parent="." unique_id=1471283222 instance=ExtResource("2_xfk5q")]
 position = Vector2(93, 164)
-max_speed = 2500.0
-acceleration = 800.0
-deceleration = 600.0
+max_speed = 1400.0
+acceleration = 1000.0
+deceleration = 2000.0
 coyote_time = 0.3
 dash_speed = 1300.0
 
