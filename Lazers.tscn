@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bp2facpanfo1e"]
+
+[ext_resource type="PackedScene" uid="uid://30rlg4kslvuj" path="res://Assets/Lasers/LaserBase/LaserBase1.glb" id="1_2xk5i"]
+[ext_resource type="PackedScene" uid="uid://b034tol544o3" path="res://Assets/Lasers/LaserBase/LaserBase2.glb" id="2_5bn3h"]
+[ext_resource type="PackedScene" uid="uid://crw0u1dh2xust" path="res://Assets/Lasers/LaserBase/LaserBase3.glb" id="3_wk4tl"]
+[ext_resource type="PackedScene" uid="uid://c2pd7isnq6xab" path="res://Assets/Lasers/LaserBase/LaserBase4.glb" id="4_r1o2p"]
+[ext_resource type="PackedScene" uid="uid://cb8vc74krthdp" path="res://Assets/Lasers/LaserBase/LaserBase5.glb" id="5_civfp"]
+[ext_resource type="PackedScene" uid="uid://1etuqfiydw5n" path="res://Assets/Lasers/Beams/Beam1.glb" id="6_rphwn"]
+[ext_resource type="PackedScene" uid="uid://dakjij7iguqbs" path="res://Assets/Lasers/Beams/Beam2.glb" id="7_ovgbt"]
+[ext_resource type="PackedScene" uid="uid://diujaht7ferpx" path="res://Assets/Lasers/Beams/Beam3.glb" id="8_myyly"]
+[ext_resource type="PackedScene" uid="uid://bg1j8n68tepx" path="res://Assets/Lasers/Beams/Beam4.glb" id="9_y4lnh"]
+[ext_resource type="PackedScene" uid="uid://cdx5su23thg2i" path="res://Assets/Lasers/Beams/Beam5.glb" id="10_y418y"]
+
+[node name="Node3D" type="Node3D" unique_id=772600357]
+
+[node name="LaserBase1" parent="." unique_id=243700574 instance=ExtResource("1_2xk5i")]
+
+[node name="LaserBase2" parent="." unique_id=597161083 instance=ExtResource("2_5bn3h")]
+
+[node name="LaserBase3" parent="." unique_id=124893297 instance=ExtResource("3_wk4tl")]
+
+[node name="LaserBase4" parent="." unique_id=1242657657 instance=ExtResource("4_r1o2p")]
+
+[node name="LaserBase5" parent="." unique_id=2044134457 instance=ExtResource("5_civfp")]
+
+[node name="Beam12" parent="." unique_id=472700222 instance=ExtResource("6_rphwn")]
+
+[node name="Beam22" parent="." unique_id=272481777 instance=ExtResource("7_ovgbt")]
+
+[node name="Beam32" parent="." unique_id=132611328 instance=ExtResource("8_myyly")]
+
+[node name="Beam42" parent="." unique_id=355160874 instance=ExtResource("9_y4lnh")]
+
+[node name="Beam52" parent="." unique_id=799226677 instance=ExtResource("10_y418y")]
