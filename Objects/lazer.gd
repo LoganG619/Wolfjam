@@ -3,7 +3,7 @@ extends Area2D
 
 @export var change_interval: float = 2.0
 
-@onready var sprite = $Sprite2D
+@onready var sprite = $SubViewportContainer/SubViewport/Beam
 
 
 # Called when the node enters the scene tree for the first time.
@@ -24,13 +24,13 @@ func _process(delta: float) -> void:
 		visible = false
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.has_method("die") and $Sprite.is_visible_in_tree():
+	if body.has_method("die") and sprite.is_visible_in_tree():
 		body.die()
 		
 		
 
 func change_sprite():
-	if $Sprite.is_visible_in_tree():
-		$Sprite.visible = false
+	if sprite.is_visible_in_tree():
+		sprite.visible = false
 	else:
-		$Sprite.visible = true
+		sprite.visible = true

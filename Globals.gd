@@ -1,7 +1,7 @@
 extends Node
 var canSwap = true
-const black = Color(0,0,0)
-const white = Color(1,1,1)
+const red = Color(1,0,0)
+const blue = Color(0,0,1)
 var curColor
 
 # Called when the node enters the scene tree for the first time.
@@ -12,12 +12,12 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("SwapToBlack") and canSwap == true:
-		curColor = black
+		curColor = red
 		canSwap = false
 		swapCooldown()
 		
 	elif Input.is_action_just_pressed("SwapToWhite") and canSwap == true:
-		curColor = white
+		curColor = blue
 		canSwap = false
 		swapCooldown()
 	
