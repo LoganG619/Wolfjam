@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://5v1p8p51hp0"]
+
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_wd0dk"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_55n7i"]
+[ext_resource type="PackedScene" uid="uid://cnhtynjckdhbk" path="res://Objects/red_spike.tscn" id="3_u438i"]
+[ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_55n7i"]
+[ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_u438i"]
+[ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="6_kg55b"]
+
+[node name="Level22" type="Node2D" unique_id=1219447015]
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_wd0dk")]
+position = Vector2(253, 259)
+max_speed = 2500.0
+acceleration = 10000.0
+deceleration = 10000.0
+jumpVelocity = -1500.0
+jump_velocity = -1500.0
+
+[node name="BluePlatform" parent="." unique_id=1485412247 instance=ExtResource("2_55n7i")]
+position = Vector2(246, 523)
+
+[node name="BluePlatform2" parent="." unique_id=1179660107 instance=ExtResource("2_55n7i")]
+position = Vector2(451, 523)
+
+[node name="RedSpike" parent="." unique_id=1057256729 instance=ExtResource("3_u438i")]
+position = Vector2(865, -299)
+rotation = 3.1652224
+
+[node name="RedPlatform" parent="." unique_id=2138591903 instance=ExtResource("4_55n7i")]
+position = Vector2(860, -243)
+
+[node name="GreenPlatform" parent="." unique_id=273163355 instance=ExtResource("5_u438i")]
+position = Vector2(935, 719)
+
+[node name="BluePlatform3" parent="." unique_id=880963384 instance=ExtResource("2_55n7i")]
+position = Vector2(1388, 926)
+
+[node name="RedPlatform2" parent="." unique_id=1161524020 instance=ExtResource("4_55n7i")]
+position = Vector2(1179, 205)
+
+[node name="GreenPlatform2" parent="." unique_id=220786318 instance=ExtResource("5_u438i")]
+position = Vector2(1856, 659)
+
+[node name="BluePlatform4" parent="." unique_id=518050463 instance=ExtResource("2_55n7i")]
+position = Vector2(2352, 552)
+
+[node name="RedSpike2" parent="." unique_id=501127846 instance=ExtResource("3_u438i")]
+position = Vector2(2356, 351)
+
+[node name="BluePlatform5" parent="." unique_id=1217916396 instance=ExtResource("2_55n7i")]
+position = Vector2(1382, 343)
+
+[node name="BluePlatform6" parent="." unique_id=4245137 instance=ExtResource("2_55n7i")]
+position = Vector2(1513, -477)
+
+[node name="RedPlatform3" parent="." unique_id=1896633314 instance=ExtResource("4_55n7i")]
+position = Vector2(2195, -488)
+
+[node name="GreenPlatform3" parent="." unique_id=1316748258 instance=ExtResource("5_u438i")]
+position = Vector2(1851, -484)
+
+[node name="GreenSpike" parent="." unique_id=1722556171 instance=ExtResource("6_kg55b")]
+position = Vector2(1855, -622)

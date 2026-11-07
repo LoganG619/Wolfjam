@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_d8kw5"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="3_d8kw5"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="4_blqu4"]
-[ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_hj44j"]
 
 [node name="Level11" type="Node2D" unique_id=746582650]
 
@@ -61,12 +60,3 @@ position = Vector2(3628, 251)
 
 [node name="RedPlatform6" parent="." unique_id=1312024079 instance=ExtResource("3_d8kw5")]
 position = Vector2(4071, 265)
-
-[node name="BluePlatform9" parent="." unique_id=27236176 instance=ExtResource("2_d8kw5")]
-position = Vector2(516, 119)
-
-[node name="RedPlatform7" parent="." unique_id=1513259710 instance=ExtResource("3_d8kw5")]
-position = Vector2(105, 91)
-
-[node name="GreenPlatform" parent="." unique_id=561777877 instance=ExtResource("5_hj44j")]
-position = Vector2(-319, 38)
