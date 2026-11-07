@@ -1,11 +1,13 @@
 
 extends Node2D
+@export var color: Color
 
 @export var offset: Vector2 = Vector2(0, -320)
 @export var duration: float = 5.0
 @export var move_horizontal: bool = false
 
 func _ready():
+	self.self_modulate.a = 0.0
 	start_tween()
 
 func start_tween():
@@ -22,3 +24,14 @@ func start_tween():
 
 	tween.tween_property($AnimatableBody2D, "position", movement, duration / 2)
 	tween.tween_property($AnimatableBody2D, "position", Vector2.ZERO, duration / 2)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if Globals.curColor == color:
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "modulate:a", 1.0, .3)
+		tween.play()
+	else:
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "modulate:a", 0.0, .3)
+		tween.play()

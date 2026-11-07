@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dbqwrukmrtwcx"]
+
+[ext_resource type="Script" uid="uid://birlps0kjsnl0" path="res://Objects/falling_platform.gd" id="1_pm671"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_uy5ax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa2gp"]
+
+[node name="FallingPlatform" type="Node2D" unique_id=270998160]
+script = ExtResource("1_pm671")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=625410876]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1009994082]
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D/CollisionShape2D" unique_id=1416743284]
+texture = ExtResource("2_uy5ax")
+
+[node name="FallTrigger" type="Area2D" parent="." unique_id=54097493]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallTrigger" unique_id=1109183974]
+shape = SubResource("RectangleShape2D_qa2gp")
