@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://do6pe1a0wxh7i"]
+
+[ext_resource type="Script" uid="uid://v6u75dy4ulwl" path="res://Objects/lazer.gd" id="1_ckak5"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_a2oxd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twdue"]
+size = Vector2(128, 128)
+
+[node name="Lazer" type="Area2D" unique_id=1057256729]
+script = ExtResource("1_ckak5")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2068295034]
+self_modulate = Color(18.892157, 0, 0, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_a2oxd")
+
+[node name="SpikeCollision" type="CollisionShape2D" parent="." unique_id=429763344]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_twdue")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
