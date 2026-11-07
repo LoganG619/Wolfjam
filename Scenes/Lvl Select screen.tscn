@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ckklcfjwoo8no"]
+
+[ext_resource type="PackedScene" uid="uid://dxbpi2shl31d0" path="res://Scenes/LevelSelectButton.tscn" id="1_x33el"]
+
+[node name="levelselect" type="Node2D" unique_id=1466035303]
+
+[node name="Label" type="Label" parent="." unique_id=1212909193]
+offset_right = 1150.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 150
+text = "LEVEL SELECT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Label" unique_id=1521436805]
+layout_mode = 0
+offset_top = 220.0
+offset_right = 1150.0
+offset_bottom = 645.0
+
+[node name="GridContainer" type="GridContainer" parent="Label/CenterContainer" unique_id=688063362]
+layout_mode = 2
+columns = 3
+
+[node name="LevelSelectButton" parent="Label/CenterContainer/GridContainer" unique_id=402134548 instance=ExtResource("1_x33el")]
+layout_mode = 2
+
+[node name="LevelSelectButton2" parent="Label/CenterContainer/GridContainer" unique_id=1612700992 instance=ExtResource("1_x33el")]
+layout_mode = 2
+
+[node name="LevelSelectButton3" parent="Label/CenterContainer/GridContainer" unique_id=781331731 instance=ExtResource("1_x33el")]
+layout_mode = 2
