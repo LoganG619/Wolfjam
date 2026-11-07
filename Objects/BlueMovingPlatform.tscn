@@ -6,34 +6,22 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 size = Vector2(202, 204)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(202, 204)
-
 [node name="BlueMovingPlatform" type="Node2D" unique_id=270998160]
-position = Vector2(0, -102)
+position = Vector2(1, -64)
 script = ExtResource("1_pc6ax")
 color = Color(0, 0, 1, 1)
 move_horizontal = true
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=625410876]
-position = Vector2(0, 38)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1009994082]
-position = Vector2(0, -38)
 shape = SubResource("RectangleShape2D_6pmnr")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="AnimatableBody2D" unique_id=1650182501]
-position = Vector2(0, -38)
-gravity_scale = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/RigidBody2D" unique_id=368430399]
-shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="AnimatableBody2D" unique_id=1588260448]
 offset_left = -512.0
-offset_top = -741.0
+offset_top = -702.0
 offset_right = 512.0
-offset_bottom = 283.0
+offset_bottom = 322.0
 metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="AnimatableBody2D/SubViewportContainer" unique_id=1451644249]

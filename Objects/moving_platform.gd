@@ -19,9 +19,6 @@ func start_tween():
 	# Determine movement direction
 	var movement = offset
 
-	if move_horizontal:
-		movement = Vector2(offset.y, 0)
-
 	tween.tween_property($AnimatableBody2D, "position", movement, duration / 2)
 	tween.tween_property($AnimatableBody2D, "position", Vector2.ZERO, duration / 2)
 
