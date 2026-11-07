@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://deuxv4vgahle2"]
+
+[ext_resource type="PackedScene" uid="uid://dawctta6vpei5" path="res://Assets/Cubes/Special/Bouncy Platform.glb" id="1_aqag7"]
+[ext_resource type="PackedScene" uid="uid://bu6713x2ptheo" path="res://Assets/Cubes/Special/Cracked Platform.glb" id="2_jlfs7"]
+
+[node name="Node3D" type="Node3D" unique_id=335708449]
+
+[node name="Bouncy Platform2" parent="." unique_id=1563257799 instance=ExtResource("1_aqag7")]
+
+[node name="Cracked Platform" parent="." unique_id=1711234634 instance=ExtResource("2_jlfs7")]
