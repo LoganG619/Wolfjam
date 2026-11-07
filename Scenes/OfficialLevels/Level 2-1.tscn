@@ -79,5 +79,5 @@ position = Vector2(2702, -233)
 position = Vector2(2078, -698)
 
 [node name="GreenSpike4" parent="." unique_id=2072745386 instance=ExtResource("4_p02ow")]
-position = Vector2(-6, 203)
+position = Vector2(-15, 216)
 rotation = -1.5552586

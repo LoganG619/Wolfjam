@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://da05mllc1hsy3"]
+
+[ext_resource type="PackedScene" uid="uid://b4hwbynw63cc3" path="res://Objects/yellow_platform.tscn" id="2_g4qbd"]
+[ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/BlueMovingPlatform.tscn" id="3_ngp0h"]
+[ext_resource type="PackedScene" uid="uid://deujimfkfon81" path="res://Objects/yellow_lazer.tscn" id="4_g4qbd"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="4_yydk1"]
+[ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="5_gk6ia"]
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="5_lwlt3"]
+[ext_resource type="PackedScene" uid="uid://we7ddup3w61y" path="res://Objects/red_moving_platform.tscn" id="7_yydk1"]
+[ext_resource type="PackedScene" uid="uid://cg5sl87r0weqv" path="res://Objects/RedLazer.tscn" id="8_lwlt3"]
+[ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="9_lwlt3"]
+
+[node name="Level31" type="Node2D" unique_id=1178360115]
+
+[node name="BluePlatform" parent="." unique_id=262366615 instance=ExtResource("4_yydk1")]
+position = Vector2(102, 337)
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("5_lwlt3")]
+position = Vector2(121, 135.99998)
+rotation = -0.000761012
+max_speed = 2500.0
+acceleration = 10000.0
+deceleration = 10000.0
+jumpVelocity = -1500.0
+jump_velocity = -1500.0
+
+[node name="BlueMovingPlatform" parent="." unique_id=270998160 instance=ExtResource("3_ngp0h")]
+position = Vector2(748, 325.00003)
+rotation = -1.577493
+
+[node name="YellowLazer" parent="." unique_id=1057256729 instance=ExtResource("4_g4qbd")]
+position = Vector2(1162, 658)
+
+[node name="RedPlatform" parent="." unique_id=1485412247 instance=ExtResource("5_gk6ia")]
+position = Vector2(1560, 414)
+
+[node name="YellowPlatform" parent="." unique_id=1241592122 instance=ExtResource("2_g4qbd")]
+position = Vector2(1152, 2)
+
+[node name="YellowPlatform2" parent="." unique_id=915670008 instance=ExtResource("2_g4qbd")]
+position = Vector2(1158, 847)
+
+[node name="RedPlatform2" parent="." unique_id=686338156 instance=ExtResource("5_gk6ia")]
+position = Vector2(1940, 696)
+
+[node name="RedMovingPlatform" parent="." unique_id=1735456369 instance=ExtResource("7_yydk1")]
+position = Vector2(2288, 601.99994)
+rotation = 1.5562086
+
+[node name="RedLazer" parent="." unique_id=1607683440 instance=ExtResource("8_lwlt3")]
+position = Vector2(2687, 903)
+
+[node name="RedMovingPlatform2" parent="." unique_id=1311960016 instance=ExtResource("7_yydk1")]
+position = Vector2(2994.9998, 385.00006)
+rotation = 1.5789012
+
+[node name="YellowPlatform3" parent="." unique_id=1138529943 instance=ExtResource("2_g4qbd")]
+position = Vector2(2681, 257)
+
+[node name="RedPlatform3" parent="." unique_id=229279480 instance=ExtResource("5_gk6ia")]
+position = Vector2(2687, 1092)
+
+[node name="DeathBox" parent="." unique_id=306434436 instance=ExtResource("9_lwlt3")]
+position = Vector2(38, 1417)
+scale = Vector2(48.08, 1)
