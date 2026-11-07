@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bp34lxh4nhok6"]
+
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="1_3d0um"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6pmnr"]
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=1718361148]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=289594038]
+shape = SubResource("BoxShape3D_6pmnr")
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=107505459]
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(2.6875, 0.5)
+texture = ExtResource("1_3d0um")

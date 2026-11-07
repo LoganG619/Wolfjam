@@ -38,7 +38,7 @@ position = Vector2(-1427, 90)
 color = Color(1, 1, 1, 1)
 
 [node name="Platform6" parent="Platforms" unique_id=557875463 instance=ExtResource("3_7p6j4")]
-position = Vector2(-1083, 90)
+position = Vector2(458, -71)
 color = Color(1, 1, 1, 1)
 
 [node name="Spikes" type="CanvasGroup" parent="." unique_id=4764796]
@@ -47,7 +47,7 @@ color = Color(1, 1, 1, 1)
 position = Vector2(831, 200)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("4_6444e")]
-position = Vector2(7, 408)
+position = Vector2(7, -415)
 max_speed = 1400.0
 acceleration = 5000.0
 deceleration = 1000.0
