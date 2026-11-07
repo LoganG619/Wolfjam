@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxsckewyeq4xr"]
 
 [ext_resource type="Script" uid="uid://dyfuj65i55bqj" path="res://Characters/player.gd" id="1_34sme"]
-[ext_resource type="PackedScene" uid="uid://ctsgq4wlqq3ld" path="res://Assets/Character proto.glb" id="2_rhlke"]
+[ext_resource type="PackedScene" uid="uid://ctsgq4wlqq3ld" path="res://Assets/Character/Character proto.glb" id="2_rhlke"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gsamf"]
 size = Vector2(180.00003, 855.99994)

@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="4_6444e"]
 [ext_resource type="PackedScene" uid="uid://dbqwrukmrtwcx" path="res://Objects/falling_platform.tscn" id="5_evi0p"]
 [ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/moving_platform.tscn" id="6_lsmp6"]
+[ext_resource type="PackedScene" uid="uid://ds8jv1t3ygntl" path="res://Objects/bouncy_platform.tscn" id="7_lsmp6"]
 
 [node name="Level1" type="Node2D" unique_id=189787590]
 script = ExtResource("1_vk57k")
@@ -58,3 +59,6 @@ position = Vector2(1911, 396)
 
 [node name="FallingPlatform" parent="." unique_id=614237354 instance=ExtResource("5_evi0p")]
 position = Vector2(1574, 403)
+
+[node name="BouncyPlatform" parent="." unique_id=795339104 instance=ExtResource("7_lsmp6")]
+position = Vector2(-1513, 723)

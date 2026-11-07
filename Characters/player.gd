@@ -35,8 +35,10 @@ func _physics_process(delta: float) -> void:
 	# Jumping
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jumpVelocity
+		anim.play("Armature|Jump")
 	if Input.is_action_just_pressed("Jump") and !is_on_floor() and !doubleJumped and doubleJump_enabled:
 		velocity.y = jumpVelocity
+		anim.play("Armature|Jump")
 		doubleJumped = true
 	
 	# Movement
@@ -66,10 +68,12 @@ func _physics_process(delta: float) -> void:
 			if sprinting == true:
 				# Accelerate towards max_speed
 				velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
-				anim.play("Armature|Sprint")
+				if velocity.y == 0:
+					anim.play("Armature|Sprint")
 			else:
 				velocity.x = move_toward(velocity.x, direction * max_speed/3, acceleration * delta)
-				anim.play("Armature|Sprint")
+				if velocity.y == 0:
+					anim.play("Armature|Sprint")
 		else:
 			# Decelerate to a stop
 			velocity.x = move_toward(velocity.x, 0, deceleration * delta)
@@ -85,7 +89,8 @@ func _physics_process(delta: float) -> void:
 			_coyote_timer = 0.0  # Consume the coyote time
 	else:
 		velocity.x = move_toward(velocity.x, 0, max_speed)
-		anim.play("Armature|Idle")
+		if velocity.y == 0:
+			anim.play("Armature|Idle")
 	move_and_slide()
 
 func die():

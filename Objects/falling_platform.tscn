@@ -15,6 +15,7 @@ size = Vector2(128, 10)
 [node name="FallingPlatform" type="Node2D" unique_id=270998160]
 script = ExtResource("1_pm671")
 fall_distance = 60000.0
+fall_duration = 10.0
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=625410876]
 
