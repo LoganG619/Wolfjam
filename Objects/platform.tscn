@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://ydcm4pxcmfpi"]
 
+[ext_resource type="Script" uid="uid://dhdr4cpp8oqri" path="res://Objects/platform.gd" id="1_08hf0"]
 [ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="1_mi635"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
 size = Vector2(128, 128)
 
 [node name="Platform" type="RigidBody2D" unique_id=1485412247]
+visible = false
 gravity_scale = 0.0
+script = ExtResource("1_08hf0")
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=1240643653]
 texture = ExtResource("1_mi635")
