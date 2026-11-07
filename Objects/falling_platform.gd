@@ -15,6 +15,7 @@ var has_fallen: bool = false
 
 
 func _ready():
+	platform_tween = get_tree().create_tween()
 	self.self_modulate.a = 0.0
 	fall_trigger.body_entered.connect(_on_body_entered)
 

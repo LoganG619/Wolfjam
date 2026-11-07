@@ -4,6 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_wgnl3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(128, 128)
 
 [node name="MovingPlatform" type="Node2D" unique_id=270998160]
 script = ExtResource("1_dqaly")
@@ -11,8 +15,14 @@ move_horizontal = true
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=625410876]
 
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1416743284]
+texture = ExtResource("2_wgnl3")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1009994082]
 shape = SubResource("RectangleShape2D_6pmnr")
 
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D/CollisionShape2D" unique_id=1416743284]
-texture = ExtResource("2_wgnl3")
+[node name="RigidBody2D" type="RigidBody2D" parent="AnimatableBody2D" unique_id=1650182501]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/RigidBody2D" unique_id=368430399]
+shape = SubResource("RectangleShape2D_g4v7s")

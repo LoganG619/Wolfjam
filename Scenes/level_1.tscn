@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/platform.tscn" id="3_7p6j4"]
 [ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/spike.tscn" id="4_7p6j4"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="4_6444e"]
+[ext_resource type="PackedScene" uid="uid://dbqwrukmrtwcx" path="res://Objects/falling_platform.tscn" id="5_evi0p"]
+[ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/moving_platform.tscn" id="6_lsmp6"]
 
 [node name="Level1" type="Node2D" unique_id=189787590]
 script = ExtResource("1_vk57k")
@@ -50,3 +52,9 @@ deceleration = 1000.0
 jumpVelocity = -1400.0
 jump_velocity = -1400.0
 dash_speed = 2500.0
+
+[node name="MovingPlatform" parent="." unique_id=270998160 instance=ExtResource("6_lsmp6")]
+position = Vector2(1911, 396)
+
+[node name="FallingPlatform" parent="." unique_id=614237354 instance=ExtResource("5_evi0p")]
+position = Vector2(1574, 403)
