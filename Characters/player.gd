@@ -57,10 +57,10 @@ func _physics_process(delta: float) -> void:
 	elif direction:
 		if sprinting == true:
 			# Accelerate towards max_speed
-			max_speed = 1400
+			max_speed = 1000
 			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
 		else:
-			max_speed = 300
+			max_speed = 400
 			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
 	else:
 		# Decelerate to a stop

@@ -10,9 +10,9 @@ script = ExtResource("1_vk57k")
 
 [node name="Player" parent="." unique_id=1471283222 instance=ExtResource("2_xfk5q")]
 position = Vector2(93, 164)
-max_speed = 1400.0
-acceleration = 1000.0
-deceleration = 3000.0
+max_speed = 800.0
+acceleration = 1800.0
+deceleration = 1800.0
 coyote_time = 0.3
 dash_speed = 1300.0
 
@@ -20,36 +20,32 @@ dash_speed = 1300.0
 position = Vector2(322, 350)
 
 [node name="Platform3" parent="Platforms" unique_id=1356820034 instance=ExtResource("3_7p6j4")]
-position = Vector2(-385, 0)
+position = Vector2(-739, 90)
 color = Color(1, 1, 1, 1)
 
 [node name="Platform" parent="Platforms" unique_id=1485412247 instance=ExtResource("3_7p6j4")]
-position = Vector2(-257, 0)
+position = Vector2(-395, 90)
 color = Color(1, 1, 1, 1)
 
 [node name="Platform9" parent="Platforms" unique_id=1838001592 instance=ExtResource("3_7p6j4")]
-position = Vector2(769, -5)
+position = Vector2(916, 34)
 
 [node name="Platform2" parent="Platforms" unique_id=922572358 instance=ExtResource("3_7p6j4")]
-position = Vector2(-128, 0)
+position = Vector2(-51, 90)
 
 [node name="Platform7" parent="Platforms" unique_id=1401609655 instance=ExtResource("3_7p6j4")]
-position = Vector2(513, -81)
-color = Color(1, 1, 1, 1)
-
-[node name="Platform5" parent="Platforms" unique_id=2085317094 instance=ExtResource("3_7p6j4")]
-position = Vector2(255, -43)
+position = Vector2(499, -86)
 color = Color(1, 1, 1, 1)
 
 [node name="Platform4" parent="Platforms" unique_id=1584662558 instance=ExtResource("3_7p6j4")]
-position = Vector2(-513, 0)
+position = Vector2(-1427, 90)
 color = Color(1, 1, 1, 1)
 
 [node name="Platform6" parent="Platforms" unique_id=557875463 instance=ExtResource("3_7p6j4")]
-position = Vector2(-641, 0)
+position = Vector2(-1083, 90)
 color = Color(1, 1, 1, 1)
 
 [node name="Spikes" type="CanvasGroup" parent="." unique_id=4764796]
 
 [node name="Spike" parent="Spikes" unique_id=1057256729 instance=ExtResource("4_7p6j4")]
-position = Vector2(835, 173)
+position = Vector2(831, 200)
