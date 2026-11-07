@@ -2,15 +2,45 @@
 
 [ext_resource type="Script" uid="uid://dyfuj65i55bqj" path="res://Characters/player.gd" id="1_34sme"]
 [ext_resource type="PackedScene" uid="uid://ctsgq4wlqq3ld" path="res://Assets/Character/Character proto.glb" id="2_rhlke"]
+[ext_resource type="AudioStream" uid="uid://bfc5xye7hvqki" path="res://Sound/859978__gm_isaac__8_bit-videogame-death-sound.wav" id="3_rhlke"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_evi0p"]
 radius = 37.500008
 height = 204.00006
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_34sme"]
+particle_flag_align_y = true
+spread = 180.0
+initial_velocity_min = 12.0
+initial_velocity_max = 14.0
+scale_min = 0.5
+scale_max = 1.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34sme"]
+albedo_color = Color(1, 0, 0, 1)
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_asny4"]
+material = SubResource("StandardMaterial3D_34sme")
+size = Vector3(0.05, 0.05, 0.05)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d0u6y"]
+particle_flag_align_y = true
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 32.079998
+initial_velocity_max = 310.97998
+gravity = Vector3(0, 98, 0)
+scale_min = 1.5
+scale_max = 4.0
+hue_variation_min = -1.0
+hue_variation_max = 0.99999994
+
 [node name="MainPlayer" type="CharacterBody2D" unique_id=2050863233 node_paths=PackedStringArray("dash_timer")]
 script = ExtResource("1_34sme")
 dash_timer = NodePath("DashTime")
-death_y = 1500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=778276785]
 position = Vector2(-0.5, -96.00001)
@@ -51,5 +81,31 @@ zoom = Vector2(0.75, 0.75)
 [node name="DashTime" type="Timer" parent="." unique_id=1286400504]
 wait_time = 0.1
 one_shot = true
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=2139567800]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11797227, 0)
+emitting = false
+amount = 90
+lifetime = 0.5
+one_shot = true
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_34sme")
+draw_pass_1 = SubResource("PrismMesh_asny4")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=613840425]
+process_mode = 3
+position = Vector2(0, -116)
+emitting = false
+amount = 150
+lifetime = 0.5
+one_shot = true
+explosiveness = 0.66
+process_material = SubResource("ParticleProcessMaterial_d0u6y")
+
+[node name="Death Sound" type="AudioStreamPlayer2D" parent="." unique_id=806058392]
+stream = ExtResource("3_rhlke")
+
+[node name="Listener" type="AudioListener2D" parent="." unique_id=1125710500]
 
 [connection signal="timeout" from="DashTime" to="." method="_on_dash_time_timeout"]

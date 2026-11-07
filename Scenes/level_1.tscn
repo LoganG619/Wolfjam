@@ -29,7 +29,7 @@ position = Vector2(191, 194)
 position = Vector2(395, 193)
 
 [node name="RedLazer" parent="." unique_id=356302544 instance=ExtResource("6_evi0p")]
-position = Vector2(530, -8)
+position = Vector2(451, -10)
 
 [node name="YellowPlatform" parent="." unique_id=873667673 instance=ExtResource("7_chwpn")]
 position = Vector2(-220, 193)

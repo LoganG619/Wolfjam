@@ -93,8 +93,21 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func die():
-	get_tree().reload_current_scene()
+	#self.visible = false
+	#$GPUParticles2D.emitting = true
+	var timer = Timer.new()
+	add_child(timer)
+
+	timer.wait_time = .5
+	timer.timeout.connect(dieForReal)
+	timer.start()
+	$"Death Sound".play()
+	$GPUParticles2D.emitting = true
+	$"SubViewportContainer/SubViewport/Character proto".visible = false
 
 func _on_dash_time_timeout() -> void:
 	dashing = false
 	can_dash = true
+	
+func dieForReal():
+	get_tree().reload_current_scene()
