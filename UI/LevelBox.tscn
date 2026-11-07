@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://bkhbc1vpu31as"]
 
 [node name="LevelBox" type="Node2D" unique_id=1758088092]
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1867005246]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1561849929]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=312582158]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer" unique_id=129703230]
+layout_mode = 2
