@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bjvwksv7os204"]
+
+[ext_resource type="Script" uid="uid://nqjt7j5ahir6" path="res://Scenes/real_lvl_select.gd" id="1_amhfw"]
+[ext_resource type="Script" uid="uid://cn1kjliq1wyru" path="res://Scenes/sprite_2d.gd" id="2_datws"]
+
+[node name="RealLvlSelect" type="Node2D" unique_id=731323379]
+script = ExtResource("1_amhfw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1516695028]
+script = ExtResource("2_datws")

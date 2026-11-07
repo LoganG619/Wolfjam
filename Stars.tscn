@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://8hbepbcjj75d"]
+
+[ext_resource type="PackedScene" uid="uid://b27x7acdpp2qq" path="res://Assets/Stars/Blue Star Fragment 1.glb" id="1_qvg4e"]
+[ext_resource type="PackedScene" uid="uid://b6blh5rwthwuj" path="res://Assets/Stars/Blue Star Fragment 2.glb" id="2_gxqwe"]
+[ext_resource type="PackedScene" uid="uid://b3ws0ub2jtopo" path="res://Assets/Stars/Blue Star Fragment 3.glb" id="3_hp33s"]
+[ext_resource type="PackedScene" uid="uid://dnu6wu0a7xbhk" path="res://Assets/Stars/Blue Star.glb" id="4_5wru7"]
+[ext_resource type="PackedScene" uid="uid://c21ejt0eggi3u" path="res://Assets/Stars/Green Star Fragment 1.glb" id="5_jb4ns"]
+[ext_resource type="PackedScene" uid="uid://bdslb1g38ls0y" path="res://Assets/Stars/Green Star Fragment 2.glb" id="6_fk75g"]
+[ext_resource type="PackedScene" uid="uid://da5jhgrepw4q5" path="res://Assets/Stars/Green Star Fragment 3.glb" id="7_d0iph"]
+[ext_resource type="PackedScene" uid="uid://srbst6yfk3dy" path="res://Assets/Stars/Green Star.glb" id="8_uf80r"]
+[ext_resource type="PackedScene" uid="uid://cimcbilm1lrr6" path="res://Assets/Stars/Purple Star Fragment 1.glb" id="9_5hxbf"]
+[ext_resource type="PackedScene" uid="uid://bkdk0yjx7gkra" path="res://Assets/Stars/Purple Star Fragment 2.glb" id="10_vf07f"]
+[ext_resource type="PackedScene" uid="uid://bd1a12ynq361i" path="res://Assets/Stars/Purple Star Fragment 3.glb" id="11_5rxlg"]
+[ext_resource type="PackedScene" uid="uid://dqmpp1ylbctbp" path="res://Assets/Stars/Purple Star.glb" id="12_vpmq2"]
+[ext_resource type="PackedScene" uid="uid://dy6cv4nb0a17a" path="res://Assets/Stars/Red Star Fragment 1.glb" id="13_jicyg"]
+[ext_resource type="PackedScene" uid="uid://b30csyc7jdft7" path="res://Assets/Stars/Red Star Fragment 2.glb" id="14_x2pcu"]
+[ext_resource type="PackedScene" uid="uid://dhw0k014rd7gu" path="res://Assets/Stars/Red Star Fragment 3.glb" id="15_q5si6"]
+[ext_resource type="PackedScene" uid="uid://cx2lxvvva20oo" path="res://Assets/Stars/Red Star.glb" id="16_a34jc"]
+[ext_resource type="PackedScene" uid="uid://c7koww7bohgat" path="res://Assets/Stars/Yellow Star Fragment 1.glb" id="17_80ndy"]
+[ext_resource type="PackedScene" uid="uid://cylu2k1buk7ex" path="res://Assets/Stars/Yellow Star Fragment 2.glb" id="18_kk87k"]
+[ext_resource type="PackedScene" uid="uid://bbbm21iqejtuh" path="res://Assets/Stars/Yellow Star Fragment 3.glb" id="19_m5fob"]
+[ext_resource type="PackedScene" uid="uid://wyhgywsv1ame" path="res://Assets/Stars/Yellow Star.glb" id="20_s1rau"]
+
+[node name="Node3D" type="Node3D" unique_id=1995783089]
+
+[node name="Blue Star Fragment 1" parent="." unique_id=2121544552 instance=ExtResource("1_qvg4e")]
+
+[node name="Blue Star Fragment 2" parent="." unique_id=476148950 instance=ExtResource("2_gxqwe")]
+
+[node name="Blue Star Fragment 3" parent="." unique_id=837862414 instance=ExtResource("3_hp33s")]
+
+[node name="Blue Star" parent="." unique_id=1775975329 instance=ExtResource("4_5wru7")]
+
+[node name="Green Star Fragment 1" parent="." unique_id=149574829 instance=ExtResource("5_jb4ns")]
+
+[node name="Green Star Fragment 2" parent="." unique_id=656310887 instance=ExtResource("6_fk75g")]
+
+[node name="Green Star Fragment 3" parent="." unique_id=8210632 instance=ExtResource("7_d0iph")]
+
+[node name="Green Star" parent="." unique_id=843898052 instance=ExtResource("8_uf80r")]
+
+[node name="Purple Star Fragment 1" parent="." unique_id=2118426591 instance=ExtResource("9_5hxbf")]
+
+[node name="Purple Star Fragment 2" parent="." unique_id=1551419631 instance=ExtResource("10_vf07f")]
+
+[node name="Purple Star Fragment 3" parent="." unique_id=1134403878 instance=ExtResource("11_5rxlg")]
+
+[node name="Purple Star" parent="." unique_id=635724161 instance=ExtResource("12_vpmq2")]
+
+[node name="Red Star Fragment 1" parent="." unique_id=1852257455 instance=ExtResource("13_jicyg")]
+
+[node name="Red Star Fragment 2" parent="." unique_id=908164515 instance=ExtResource("14_x2pcu")]
+
+[node name="Red Star Fragment 3" parent="." unique_id=1063595868 instance=ExtResource("15_q5si6")]
+
+[node name="Red Star" parent="." unique_id=1926911060 instance=ExtResource("16_a34jc")]
+
+[node name="Yellow Star Fragment 1" parent="." unique_id=1684798510 instance=ExtResource("17_80ndy")]
+
+[node name="Yellow Star Fragment 2" parent="." unique_id=609863935 instance=ExtResource("18_kk87k")]
+
+[node name="Yellow Star Fragment 3" parent="." unique_id=1931955626 instance=ExtResource("19_m5fob")]
+
+[node name="Yellow Star" parent="." unique_id=956785790 instance=ExtResource("20_s1rau")]

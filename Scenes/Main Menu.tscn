@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://dypx63r6a54yw"]
+
+[ext_resource type="Script" uid="uid://ceivkdt5n3n5f" path="res://Scenes/main_menu.gd" id="1_totuj"]
+[ext_resource type="Texture2D" uid="uid://dy8alox2c34m4" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 143345.png" id="2_ur25d"]
+[ext_resource type="Texture2D" uid="uid://binhxcoykc46s" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 143403.png" id="3_eotax"]
+[ext_resource type="Texture2D" uid="uid://b0t3s4ercny57" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 150134.png" id="4_0vewo"]
+[ext_resource type="Texture2D" uid="uid://cjgrhhd8qyeix" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 150151.png" id="5_wib81"]
+[ext_resource type="Texture2D" uid="uid://c0fx32akjcxky" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 145411.png" id="6_tbdrc"]
+[ext_resource type="Texture2D" uid="uid://dtjag5ywdbm2d" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 145550.png" id="7_vuees"]
+[ext_resource type="Texture2D" uid="uid://xysdrfpt8ye2" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 145641.png" id="8_3hb06"]
+[ext_resource type="Texture2D" uid="uid://bygmea0t4g6wq" path="res://Assets/Buttons Hovered/Screenshot 2026-11-07 145700.png" id="9_ns28u"]
+
+[node name="Main Menu test" type="Node2D" unique_id=331576227]
+position = Vector2(-107, -457)
+script = ExtResource("1_totuj")
+
+[node name="Button manager" type="Control" parent="." unique_id=815185851]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 11392.0
+offset_top = -41984.0
+offset_right = 11432.0
+offset_bottom = -41944.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Button manager" unique_id=1200687657]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11145.001
+offset_top = 42449.004
+offset_right = -10762.001
+offset_bottom = 42961.004
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.0454092, 1.1108769)
+
+[node name="Start" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=272166706]
+layout_mode = 2
+texture_normal = ExtResource("2_ur25d")
+texture_hover = ExtResource("3_eotax")
+
+[node name="Settings" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=1444801950]
+layout_mode = 2
+texture_normal = ExtResource("4_0vewo")
+texture_hover = ExtResource("5_wib81")
+
+[node name="Controls" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=102847270]
+layout_mode = 2
+texture_normal = ExtResource("6_tbdrc")
+texture_hover = ExtResource("7_vuees")
+
+[node name="Quit" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=1816907097]
+layout_mode = 2
+texture_normal = ExtResource("8_3hb06")
+texture_hover = ExtResource("9_ns28u")
+
+[connection signal="pressed" from="Button manager/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button manager/VBoxContainer/Settings" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button manager/VBoxContainer/Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="Button manager/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

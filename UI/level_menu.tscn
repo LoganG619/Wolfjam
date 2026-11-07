@@ -1,26 +1,35 @@
 [gd_scene format=3 uid="uid://141oromi486l"]
 
-[ext_resource type="Script" uid="uid://bkj3sgjn6nsk2" path="res://UI/level_menu.gd" id="1_e6cg7"]
-[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_u2a6m"]
+[ext_resource type="Script" uid="uid://c2xfx4xiwb87r" path="res://UI/level_box.gd" id="1_e6cg7"]
+[ext_resource type="Texture2D" uid="uid://b1q3pg2edt0hp" path="res://Assets/Level Menu Selct/Level_Select-7.png_1.png" id="2_u2a6m"]
 
-[node name="LevelMenu" type="Node2D" unique_id=1841798765]
+[node name="Node2D" type="Node2D" unique_id=522026104]
+
+[node name="LevelBox" type="PanelContainer" parent="." unique_id=1035462186]
+custom_minimum_size = Vector2(500, 500)
+propagate_maximum_size = false
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("1_e6cg7")
+locked = false
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1892531617]
-self_modulate = Color(0, 0, 0, 1)
-position = Vector2(658.00006, 326)
-scale = Vector2(13.30078, 6.75)
+[node name="Label" type="Label" parent="LevelBox" unique_id=1358503230]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "1"
+
+[node name="MarginContainer" type="MarginContainer" parent="LevelBox/Label" unique_id=247027107]
+custom_maximum_size = Vector2(1150, 650)
+layout_mode = 0
+offset_left = -1.0
+offset_top = -225.0
+offset_right = 1023.0
+offset_bottom = 799.0
+
+[node name="TextureRect" type="TextureRect" parent="LevelBox/Label/MarginContainer" unique_id=1026710088]
+layout_mode = 2
 texture = ExtResource("2_u2a6m")
+stretch_mode = 5
 
-[node name="Level1Button" type="Button" parent="." unique_id=823974721]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = 112.0
-offset_top = 86.0
-offset_right = 287.0
-offset_bottom = 189.0
-grow_horizontal = 0
-text = "Lvl1"
-
-[connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="gui_input" from="LevelBox" to="LevelBox" method="_on_gui_input"]
+[connection signal="gui_input" from="LevelBox/Label/MarginContainer/TextureRect" to="LevelBox" method="_on_texture_rect_gui_input"]

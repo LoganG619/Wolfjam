@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="Wolfjam"
+run/main_scene="uid://dypx63r6a54yw"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://Art/icon.svg"
 
 [autoload]
 
 Globals="*uid://buuf73ppn54ic"
+RealLvlSelect="*uid://nqjt7j5ahir6"
 
 [display]
 
