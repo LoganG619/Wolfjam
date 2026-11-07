@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cxsckewyeq4xr"]
+
+[ext_resource type="Script" uid="uid://dyfuj65i55bqj" path="res://Characters/player.gd" id="1_34sme"]
+[ext_resource type="PackedScene" uid="uid://ctsgq4wlqq3ld" path="res://Assets/Character proto.glb" id="2_rhlke"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gsamf"]
+size = Vector2(180.00003, 855.99994)
+
+[node name="MainPlayer" type="CharacterBody2D" unique_id=2050863233 node_paths=PackedStringArray("dash_timer")]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_34sme")
+dash_timer = NodePath("DashTime")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=778276785]
+position = Vector2(4.7683707e-06, -431.99973)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_gsamf")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=688451280]
+offset_left = -513.0
+offset_top = -1014.0
+offset_right = 511.0
+offset_bottom = 10.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1820713871]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Character proto" parent="SubViewportContainer/SubViewport" unique_id=1335122351 instance=ExtResource("2_rhlke")]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=580754529]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.0872117, -3.189196)
+projection = 1
+size = 2.2322567
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=632430649]
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 2.0854392, -5.2345676)
+light_energy = 2.431
+light_indirect_energy = 9.38
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 16.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1480912509]
+position = Vector2(0, -630)
+zoom = Vector2(0.72, 0.72)
+
+[node name="DashTime" type="Timer" parent="." unique_id=1286400504]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="DashTime" to="." method="_on_dash_time_timeout"]

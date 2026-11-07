@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@onready var player: Node3D =  $"SubViewportContainer/SubViewport/Character proto"
+@onready var anim: AnimationPlayer =  $"SubViewportContainer/SubViewport/Character proto".get_node("AnimationPlayer")
 
 @export var max_speed: float 
 @export var acceleration: float 
@@ -23,11 +25,12 @@ var dash_direction := 0.0  # -1, 0, or 1
 
 
 func _physics_process(delta: float) -> void:
-	
-	if not is_on_floor():
+	if not is_on_floor() and !dashing:
 		velocity += get_gravity() * delta
 	else :
 		doubleJumped = false
+	
+	
 	
 	# Jumping
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
@@ -38,49 +41,56 @@ func _physics_process(delta: float) -> void:
 	
 	# Movement
 	var direction = Input.get_axis("MoveLeft", "MoveRight")
-		
-	# Dashing
-	if Input.is_action_just_pressed("Dash") and can_dash:
-		dashing = true
-		can_dash = false
-		dash_timer.start()
-		dash_direction = sign(direction)  # store last movement direction
-		velocity.y = 0  # stop vertical movement during dash
-	
-	if Input.is_action_pressed("Sprint") and is_on_floor():
-		sprinting = true
-	else:
-		sprinting = false
-
-	if dashing and direction:
-		velocity.x = dash_direction * dash_speed
-	elif direction:
-		if sprinting == true:
-			# Accelerate towards max_speed
-			max_speed = 1000
-			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
+	if direction :
+		if direction > 0:
+			player.rotation.y = PI/2
 		else:
-			max_speed = 400
-			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
-	else:
-		# Decelerate to a stop
-		velocity.x = move_toward(velocity.x, 0, deceleration * delta)
+			player.rotation.y = -PI/2
+		# Dashing
+		if Input.is_action_just_pressed("Dash") and can_dash:
+			dashing = true
+			can_dash = false
+			dash_timer.start()
+			dash_direction = sign(direction)  # store last movement direction
+			velocity.y = 0  # stop vertical movement during dash
 	
-	
-	if is_on_floor():
-		_coyote_timer = coyote_time  # Reset when grounded
-	else:
-		_coyote_timer -= delta
-	
-	if Input.is_action_just_pressed("Jump") and _coyote_timer > 0.0:
-		velocity.y = jumpVelocity
-		_coyote_timer = 0.0  # Consume the coyote time
-	velocity.y += get_gravity().y * delta
-	move_and_slide()
+		if Input.is_action_pressed("Sprint"):
+			sprinting = true
+		else:
+			sprinting = false
 
-func _on_dash_timer_timeout():
-	dashing = false
-	can_dash = true
+		if dashing and direction:
+			velocity.x = dash_direction * dash_speed
+
+		elif direction:
+			if sprinting == true:
+				# Accelerate towards max_speed
+				velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
+				anim.play("Armature|Sprint")
+			else:
+				velocity.x = move_toward(velocity.x, direction * max_speed/3, acceleration * delta)
+				anim.play("Armature|Sprint")
+		else:
+			# Decelerate to a stop
+			velocity.x = move_toward(velocity.x, 0, deceleration * delta)
+	
+	
+		if is_on_floor():
+			_coyote_timer = coyote_time  # Reset when grounded
+		else:
+			_coyote_timer -= delta
+	
+		if Input.is_action_just_pressed("Jump") and _coyote_timer > 0.0:
+			velocity.y = jumpVelocity
+			_coyote_timer = 0.0  # Consume the coyote time
+	else:
+		velocity.x = move_toward(velocity.x, 0, max_speed)
+		anim.play("Armature|Idle")
+	move_and_slide()
 
 func die():
 	get_tree().reload_current_scene()
+
+func _on_dash_time_timeout() -> void:
+	dashing = false
+	can_dash = true
