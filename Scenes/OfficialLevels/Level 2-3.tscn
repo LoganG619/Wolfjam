@@ -47,27 +47,45 @@ position = Vector2(1266, -10)
 
 [node name="DeathBox" parent="." unique_id=1343442165 instance=ExtResource("8_6gr0h")]
 position = Vector2(71, 1712)
-scale = Vector2(29.965174, 1.1068087)
+scale = Vector2(39.645176, 1.1068087)
 
 [node name="BlueSpike" parent="." unique_id=1771832671 instance=ExtResource("9_quq3w")]
 position = Vector2(1378, 69)
 rotation = 1.5769837
 
 [node name="RedPlatform2" parent="." unique_id=1785088210 instance=ExtResource("6_m73xr")]
-position = Vector2(1502, 1021)
+position = Vector2(1497, 923)
 
 [node name="RedPlatform3" parent="." unique_id=1419164165 instance=ExtResource("6_m73xr")]
-position = Vector2(1704, 1021)
+position = Vector2(1699, 923)
 
 [node name="GreenMovingPlatform" parent="." unique_id=480948383 instance=ExtResource("10_h1cvw")]
-position = Vector2(2124, 715)
+position = Vector2(2118.9998, 689.99994)
 rotation = 1.5658929
 
 [node name="BluePlatform2" parent="." unique_id=1708471071 instance=ExtResource("2_80t8c")]
-position = Vector2(2622, 1145)
+position = Vector2(2612, 1022)
 
 [node name="BluePlatform3" parent="." unique_id=434831078 instance=ExtResource("2_80t8c")]
-position = Vector2(2824, 1145)
+position = Vector2(2814, 1027)
 
 [node name="RedSpike2" parent="." unique_id=865936579 instance=ExtResource("7_kvfbo")]
-position = Vector2(2617, 957)
+position = Vector2(2602, 834)
+
+[node name="RedPlatform4" parent="." unique_id=1138333980 instance=ExtResource("6_m73xr")]
+position = Vector2(3024, 1228)
+
+[node name="GreenSpike2" parent="." unique_id=1051519228 instance=ExtResource("4_quq3w")]
+position = Vector2(3024, 1016)
+
+[node name="BluePlatform4" parent="." unique_id=443761067 instance=ExtResource("2_80t8c")]
+position = Vector2(3227, 1228)
+
+[node name="BlueSpike2" parent="." unique_id=500525513 instance=ExtResource("9_quq3w")]
+position = Vector2(3207, 1016)
+
+[node name="GreenPlatform4" parent="." unique_id=404010247 instance=ExtResource("3_6gr0h")]
+position = Vector2(3434, 1021)
+
+[node name="GreenPlatform5" parent="." unique_id=1962076859 instance=ExtResource("3_6gr0h")]
+position = Vector2(3641, 1021)
