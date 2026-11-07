@@ -19,8 +19,8 @@ jumpVelocity = -1503.0
 position = Vector2(-330, 263)
 
 [node name="DeathBox" parent="." unique_id=1057256729 instance=ExtResource("3_80mpu")]
-position = Vector2(-925.00006, 1207)
-scale = Vector2(14.18059, 0.92455566)
+position = Vector2(1458, 1066)
+scale = Vector2(40.079983, 0.65840065)
 
 [node name="BluePlatform" parent="." unique_id=491614596 instance=ExtResource("1_mhvn7")]
 position = Vector2(92, 541)
@@ -38,10 +38,10 @@ position = Vector2(692, -17)
 position = Vector2(691, 192)
 
 [node name="BluePlatform5" parent="." unique_id=414407519 instance=ExtResource("1_mhvn7")]
-position = Vector2(-1207, -959)
+position = Vector2(-1884, -1651)
 
 [node name="BluePlatform6" parent="." unique_id=1815226030 instance=ExtResource("1_mhvn7")]
-position = Vector2(-788, -996)
+position = Vector2(-1890, -1466)
 
 [node name="BluePlatform7" parent="." unique_id=79506232 instance=ExtResource("1_mhvn7")]
 position = Vector2(1429, 679)
