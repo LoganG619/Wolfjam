@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b0y2lgat1tri1"]
+
+[ext_resource type="PackedScene" uid="uid://djag3cncmu06p" path="res://Assets/Cubes/Special/Starting Platform.glb" id="1_hr056"]
+
+[node name="Node3D" type="Node3D" unique_id=18480676]
+
+[node name="Starting Platform" parent="." unique_id=1923247520 instance=ExtResource("1_hr056")]
