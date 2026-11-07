@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://141oromi486l"]
+
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="1_c64aj"]
+[ext_resource type="Script" uid="uid://bkj3sgjn6nsk2" path="res://Scenes/level_menu.gd" id="1_ymr0u"]
+
+[node name="LevelMenu" type="Node2D" unique_id=1841798765]
+script = ExtResource("1_ymr0u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1892531617]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(658.00006, 326)
+scale = Vector2(13.30078, 6.75)
+texture = ExtResource("1_c64aj")
+
+[node name="Level1Button" type="Button" parent="." unique_id=823974721]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 112.0
+offset_top = 86.0
+offset_right = 287.0
+offset_bottom = 189.0
+grow_horizontal = 0
+text = "Lvl1"
+
+[connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]
