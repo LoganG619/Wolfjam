@@ -7,12 +7,11 @@
 
 [node name="Player" parent="." unique_id=1471283222 instance=ExtResource("1_bo1nx")]
 position = Vector2(175, 194)
+max_speed = 2500.0
 
 [node name="Platform" parent="." unique_id=1485412247 instance=ExtResource("2_8gbba")]
-visible = true
 position = Vector2(181, 417)
 
 [node name="Platform2" parent="." unique_id=200109188 instance=ExtResource("2_8gbba")]
-visible = true
 position = Vector2(309, 417)
 color = Color(1, 1, 1, 1)

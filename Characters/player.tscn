@@ -6,8 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
 size = Vector2(128, 128)
 
-[node name="Player" type="CharacterBody2D" unique_id=1471283222]
+[node name="Player" type="CharacterBody2D" unique_id=1471283222 node_paths=PackedStringArray("dash_timer")]
 script = ExtResource("1_eovys")
+dash_timer = NodePath("DashTimer")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1375239744]
 texture = ExtResource("2_eovys")
@@ -16,3 +17,5 @@ texture = ExtResource("2_eovys")
 shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=425514903]
+
+[node name="DashTimer" type="Timer" parent="." unique_id=1863130314]
