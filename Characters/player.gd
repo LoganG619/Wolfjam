@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var acceleration: float 
 @export var deceleration: float
 @export var jumpVelocity = -800.0
+var sprinting = false
 var doubleJumped = false
 
 @export var jump_velocity: float = -800.0
@@ -45,12 +46,22 @@ func _physics_process(delta: float) -> void:
 		dash_timer.start()
 		dash_direction = sign(direction)  # store last movement direction
 		velocity.y = 0  # stop vertical movement during dash
-		
+	
+	if Input.is_action_pressed("Sprint") and is_on_floor():
+		sprinting = true
+	else:
+		sprinting = false
+
 	if dashing and direction:
 		velocity.x = dash_direction * dash_speed
 	elif direction:
-		# Accelerate towards max_speed
-		velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
+		if sprinting == true:
+			# Accelerate towards max_speed
+			max_speed = 1400
+			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
+		else:
+			max_speed = 300
+			velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
 	else:
 		# Decelerate to a stop
 		velocity.x = move_toward(velocity.x, 0, deceleration * delta)

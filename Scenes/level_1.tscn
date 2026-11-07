@@ -12,7 +12,7 @@ script = ExtResource("1_vk57k")
 position = Vector2(93, 164)
 max_speed = 1400.0
 acceleration = 1000.0
-deceleration = 2000.0
+deceleration = 3000.0
 coyote_time = 0.3
 dash_speed = 1300.0
 
@@ -39,6 +39,14 @@ color = Color(1, 1, 1, 1)
 
 [node name="Platform5" parent="Platforms" unique_id=2085317094 instance=ExtResource("3_7p6j4")]
 position = Vector2(255, -43)
+color = Color(1, 1, 1, 1)
+
+[node name="Platform4" parent="Platforms" unique_id=1584662558 instance=ExtResource("3_7p6j4")]
+position = Vector2(-513, 0)
+color = Color(1, 1, 1, 1)
+
+[node name="Platform6" parent="Platforms" unique_id=557875463 instance=ExtResource("3_7p6j4")]
+position = Vector2(-641, 0)
 color = Color(1, 1, 1, 1)
 
 [node name="Spikes" type="CanvasGroup" parent="." unique_id=4764796]
