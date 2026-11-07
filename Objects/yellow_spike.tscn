@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bcp4h7u7v6dbm"]
+
+[ext_resource type="Script" uid="uid://c2v5ydcx1m81q" path="res://Objects/spike.gd" id="1_g47rx"]
+[ext_resource type="PackedScene" uid="uid://byxkbde4qr50n" path="res://Assets/Spikes/Cystal Spike5.glb" id="2_g47rx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(105, 267)
+
+[node name="YellowSpike" type="Area2D" unique_id=1057256729]
+script = ExtResource("1_g47rx")
+color = Color(1, 1, 0, 1)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=2050545823]
+offset_left = -505.0
+offset_top = -776.0
+offset_right = 519.0
+offset_bottom = 248.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2045471432]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1480352852]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 100, 0.35325587, 92.472725)
+projection = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=158469869]
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 2.0854392, -5.2345676)
+light_energy = 2.431
+light_indirect_energy = 9.38
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 0.0
+
+[node name="Cystal Spike5" parent="SubViewportContainer/SubViewport" unique_id=1644581735 instance=ExtResource("2_g47rx")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 99.058784, 0, 100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=16995322]
+position = Vector2(0.5, -133.5)
+shape = SubResource("RectangleShape2D_57qmd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

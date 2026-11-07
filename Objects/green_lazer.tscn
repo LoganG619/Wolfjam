@@ -1,22 +1,22 @@
-[gd_scene format=3 uid="uid://do6pe1a0wxh7i"]
+[gd_scene format=3 uid="uid://duxck1tuoy3se"]
 
-[ext_resource type="Script" uid="uid://v6u75dy4ulwl" path="res://Objects/lazer.gd" id="1_ckak5"]
-[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_a2oxd"]
-[ext_resource type="PackedScene" uid="uid://1etuqfiydw5n" path="res://Assets/Lasers/Beams/Beam1.glb" id="3_dvgoe"]
-[ext_resource type="PackedScene" uid="uid://30rlg4kslvuj" path="res://Assets/Lasers/LaserBase/LaserBase1.glb" id="4_b1q4r"]
+[ext_resource type="Script" uid="uid://v6u75dy4ulwl" path="res://Objects/lazer.gd" id="1_5fhwj"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_e2fce"]
+[ext_resource type="PackedScene" uid="uid://crw0u1dh2xust" path="res://Assets/Lasers/LaserBase/LaserBase3.glb" id="3_5fhwj"]
+[ext_resource type="PackedScene" uid="uid://diujaht7ferpx" path="res://Assets/Lasers/Beams/Beam3.glb" id="4_e2fce"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twdue"]
 size = Vector2(128, 128)
 
-[node name="Lazer" type="Area2D" unique_id=1057256729]
-script = ExtResource("1_ckak5")
-color = Color(0, 0, 1, 1)
+[node name="GreenLazer" type="Area2D" unique_id=1057256729]
+script = ExtResource("1_5fhwj")
+color = Color(0, 1, 0, 1)
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=2068295034]
 visible = false
 self_modulate = Color(18.892157, 0, 0, 1)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_a2oxd")
+texture = ExtResource("2_e2fce")
 
 [node name="SpikeCollision" type="CollisionShape2D" parent="." unique_id=429763344]
 scale = Vector2(0.5, 0.5)
@@ -27,6 +27,7 @@ offset_left = -513.0
 offset_top = -1014.0
 offset_right = 511.0
 offset_bottom = 10.0
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1974306205]
 transparent_bg = true
@@ -47,10 +48,10 @@ light_volumetric_fog_energy = 0.0
 light_angular_distance = 90.0
 light_specular = 0.0
 
-[node name="Beam" parent="SubViewportContainer/SubViewport" unique_id=794184710 instance=ExtResource("3_dvgoe")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900.2114, -0.01063478, 900)
+[node name="LaserBase3" parent="SubViewportContainer/SubViewport" unique_id=72482138 instance=ExtResource("3_5fhwj")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900, 0, 899.39026)
 
-[node name="LaserBase1" parent="SubViewportContainer/SubViewport" unique_id=2042090546 instance=ExtResource("4_b1q4r")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900, 0, 900)
+[node name="Beam32" parent="SubViewportContainer/SubViewport" unique_id=1810979443 instance=ExtResource("4_e2fce")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900.2114, -0.01063478, 899.3876)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

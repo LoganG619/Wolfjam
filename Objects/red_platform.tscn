@@ -1,31 +1,32 @@
-[gd_scene format=3 uid="uid://ydcm4pxcmfpi"]
+[gd_scene format=3 uid="uid://ds8vn3xp2drog"]
 
-[ext_resource type="Script" uid="uid://dhdr4cpp8oqri" path="res://Objects/platform.gd" id="1_08hf0"]
-[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="1_mi635"]
-[ext_resource type="PackedScene" uid="uid://cuhfpewbg03ot" path="res://Assets/Cubes/Colored Cubes1.glb" id="3_755ef"]
+[ext_resource type="Script" uid="uid://dhdr4cpp8oqri" path="res://Objects/platform.gd" id="1_2uym4"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_rhxcu"]
+[ext_resource type="PackedScene" uid="uid://dvqjw5x8rfgt1" path="res://Assets/Cubes/Colored Cubes2.glb" id="3_pl7vl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
-size = Vector2(680, 683)
+size = Vector2(204, 205)
 
-[node name="Platform" type="RigidBody2D" unique_id=1485412247]
+[node name="RedPlatform" type="RigidBody2D" unique_id=1485412247]
 gravity_scale = 0.0
-script = ExtResource("1_08hf0")
+script = ExtResource("1_2uym4")
+color = Color(1, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746452657]
-position = Vector2(10, -343.5)
+position = Vector2(3, -102)
 shape = SubResource("RectangleShape2D_6pmnr")
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=1240643653]
 visible = false
 position = Vector2(3.8146973e-06, 0)
 scale = Vector2(2.6875, 0.5)
-texture = ExtResource("1_mi635")
+texture = ExtResource("2_rhxcu")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=65487809]
-offset_left = -500.0
-offset_top = -885.0
-offset_right = 524.0
-offset_bottom = 139.0
+offset_left = -509.0
+offset_top = -1024.0
+offset_right = 515.0
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1006431641]
 transparent_bg = true
@@ -34,17 +35,16 @@ size = Vector2i(1024, 1024)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=300573012]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -100, 1.0872117, -105.06983)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -100, 0.39968765, -101.10775)
 projection = 1
-size = 3.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1878154288]
 transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 3.5533972, -5.2345676)
-light_energy = 2.431
+light_energy = 0.1
 light_indirect_energy = 9.38
 light_volumetric_fog_energy = 0.0
 light_angular_distance = 90.0
 light_specular = 0.0
 
-[node name="Colored Cubes1" parent="SubViewportContainer/SubViewport" unique_id=1480546910 instance=ExtResource("3_755ef")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 1, -100)
+[node name="Colored Cubes2" parent="SubViewportContainer/SubViewport" unique_id=280947105 instance=ExtResource("3_pl7vl")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -100.236336, 0, -100)

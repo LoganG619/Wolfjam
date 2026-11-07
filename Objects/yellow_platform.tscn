@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://b4hwbynw63cc3"]
+
+[ext_resource type="Script" uid="uid://dhdr4cpp8oqri" path="res://Objects/platform.gd" id="1_gvj6j"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_w4it1"]
+[ext_resource type="PackedScene" uid="uid://cj6wb3i22gu33" path="res://Assets/Cubes/Colored Cubes5.glb" id="3_gvj6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(199, 205)
+
+[node name="YellowPlatform" type="RigidBody2D" unique_id=1485412247]
+gravity_scale = 0.0
+script = ExtResource("1_gvj6j")
+color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746452657]
+position = Vector2(5.5, -102)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=1240643653]
+visible = false
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(2.6875, 0.5)
+texture = ExtResource("2_w4it1")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=65487809]
+offset_left = -509.0
+offset_top = -1024.0
+offset_right = 515.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1006431641]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=300573012]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -100, 0.39968765, -101.10775)
+projection = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1878154288]
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 3.5533972, -5.2345676)
+light_energy = 0.1
+light_indirect_energy = 9.38
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 0.0
+
+[node name="Colored Cubes5" parent="SubViewportContainer/SubViewport" unique_id=467819149 instance=ExtResource("3_gvj6j")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -100.94969, 1.4901161e-08, -99.99988)

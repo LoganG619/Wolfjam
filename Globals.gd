@@ -2,6 +2,8 @@ extends Node
 var canSwap = true
 const red = Color(1,0,0)
 const blue = Color(0,0,1)
+const yellow = Color(1,1,0)
+const green = Color(0,1,0)
 var curColor
 
 # Called when the node enters the scene tree for the first time.

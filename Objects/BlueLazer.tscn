@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://do6pe1a0wxh7i"]
+
+[ext_resource type="Script" uid="uid://v6u75dy4ulwl" path="res://Objects/lazer.gd" id="1_ckak5"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="2_a2oxd"]
+[ext_resource type="PackedScene" uid="uid://1etuqfiydw5n" path="res://Assets/Lasers/Beams/Beam1.glb" id="3_dvgoe"]
+[ext_resource type="PackedScene" uid="uid://30rlg4kslvuj" path="res://Assets/Lasers/LaserBase/LaserBase1.glb" id="4_b1q4r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twdue"]
+size = Vector2(128, 128)
+
+[node name="BlueLazer" type="Area2D" unique_id=1057256729]
+script = ExtResource("1_ckak5")
+color = Color(0, 0, 1, 1)
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2068295034]
+visible = false
+self_modulate = Color(18.892157, 0, 0, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_a2oxd")
+
+[node name="SpikeCollision" type="CollisionShape2D" parent="." unique_id=429763344]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_twdue")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=957772282]
+offset_left = -513.0
+offset_top = -1014.0
+offset_right = 511.0
+offset_bottom = 10.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1974306205]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1591776848]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 900, 1.0872117, 896.8011)
+projection = 1
+size = 2.2322567
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1832520674]
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 2.0854392, -5.2345676)
+light_energy = 2.431
+light_indirect_energy = 9.38
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 0.0
+
+[node name="Beam" parent="SubViewportContainer/SubViewport" unique_id=794184710 instance=ExtResource("3_dvgoe")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900.2114, -0.01063478, 900)
+
+[node name="LaserBase1" parent="SubViewportContainer/SubViewport" unique_id=2042090546 instance=ExtResource("4_b1q4r")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 900, 0, 900)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

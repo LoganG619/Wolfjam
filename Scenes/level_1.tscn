@@ -1,69 +1,6 @@
 [gd_scene format=3 uid="uid://cqpcd2n5556b3"]
 
 [ext_resource type="Script" uid="uid://beehg1bfupk8x" path="res://Scenes/level_1.gd" id="1_vk57k"]
-[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/platform.tscn" id="3_7p6j4"]
-[ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/spike.tscn" id="4_7p6j4"]
-[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="4_6444e"]
-[ext_resource type="PackedScene" uid="uid://dbqwrukmrtwcx" path="res://Objects/falling_platform.tscn" id="5_evi0p"]
-[ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/moving_platform.tscn" id="6_lsmp6"]
-[ext_resource type="PackedScene" uid="uid://ds8jv1t3ygntl" path="res://Objects/bouncy_platform.tscn" id="7_lsmp6"]
-[ext_resource type="PackedScene" uid="uid://do6pe1a0wxh7i" path="res://Objects/lazer.tscn" id="8_xrdnt"]
 
 [node name="Level1" type="Node2D" unique_id=189787590]
 script = ExtResource("1_vk57k")
-
-[node name="Platforms" type="CanvasGroup" parent="." unique_id=650934149]
-position = Vector2(322, 350)
-
-[node name="Platform3" parent="Platforms" unique_id=1356820034 instance=ExtResource("3_7p6j4")]
-position = Vector2(-739, 90)
-color = Color(1, 1, 1, 1)
-
-[node name="Platform" parent="Platforms" unique_id=1485412247 instance=ExtResource("3_7p6j4")]
-position = Vector2(-395, 90)
-color = Color(1, 1, 1, 1)
-
-[node name="Platform9" parent="Platforms" unique_id=1838001592 instance=ExtResource("3_7p6j4")]
-position = Vector2(916, 34)
-
-[node name="Platform2" parent="Platforms" unique_id=922572358 instance=ExtResource("3_7p6j4")]
-position = Vector2(-51, 90)
-
-[node name="Platform7" parent="Platforms" unique_id=1401609655 instance=ExtResource("3_7p6j4")]
-position = Vector2(499, -86)
-color = Color(1, 1, 1, 1)
-
-[node name="Platform4" parent="Platforms" unique_id=1584662558 instance=ExtResource("3_7p6j4")]
-position = Vector2(-1427, 90)
-color = Color(1, 1, 1, 1)
-
-[node name="Platform6" parent="Platforms" unique_id=557875463 instance=ExtResource("3_7p6j4")]
-position = Vector2(458, -71)
-color = Color(1, 1, 1, 1)
-
-[node name="Spikes" type="CanvasGroup" parent="." unique_id=4764796]
-
-[node name="Spike" parent="Spikes" unique_id=1057256729 instance=ExtResource("4_7p6j4")]
-position = Vector2(831, 200)
-
-[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("4_6444e")]
-position = Vector2(7, -415)
-max_speed = 1400.0
-acceleration = 5000.0
-deceleration = 1000.0
-jumpVelocity = -1400.0
-jump_velocity = -1400.0
-dash_speed = 2500.0
-
-[node name="MovingPlatform" parent="." unique_id=270998160 instance=ExtResource("6_lsmp6")]
-position = Vector2(1911, 396)
-
-[node name="FallingPlatform" parent="." unique_id=614237354 instance=ExtResource("5_evi0p")]
-position = Vector2(1574, 403)
-
-[node name="BouncyPlatform" parent="." unique_id=795339104 instance=ExtResource("7_lsmp6")]
-position = Vector2(-1513, 723)
-
-[node name="Lazer" parent="." unique_id=853707955 instance=ExtResource("8_xrdnt")]
-position = Vector2(-443, -17)
-scale = Vector2(1, 4.7200003)
