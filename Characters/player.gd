@@ -25,12 +25,11 @@ var dash_direction := 0.0  # -1, 0, or 1
 
 
 func _physics_process(delta: float) -> void:
+	
 	if not is_on_floor() and !dashing:
 		velocity += get_gravity() * delta
 	else :
 		doubleJumped = false
-	
-	
 	
 	# Jumping
 	if Input.is_action_just_pressed("Jump") and is_on_floor():

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cxxjab1vqgv00"]
+
+[ext_resource type="Script" uid="uid://dhdr4cpp8oqri" path="res://Objects/platform.gd" id="1_08hf0"]
+[ext_resource type="Texture2D" uid="uid://c72837w42o8iv" path="res://Art/icon.svg" id="1_mi635"]
+[ext_resource type="PackedScene" uid="uid://cuhfpewbg03ot" path="res://Assets/Cubes/Colored Cubes1.glb" id="3_755ef"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(680, 683)
+
+[node name="Platform" type="RigidBody2D" unique_id=1485412247]
+gravity_scale = 0.0
+script = ExtResource("1_08hf0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746452657]
+position = Vector2(10, -343.5)
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=1240643653]
+visible = false
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(2.6875, 0.5)
+texture = ExtResource("1_mi635")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=65487809]
+offset_left = -500.0
+offset_top = -885.0
+offset_right = 524.0
+offset_bottom = 139.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1006431641]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=300573012]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -100, 1.0872117, -105.06983)
+projection = 1
+size = 3.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport" unique_id=1878154288]
+transform = Transform3D(1, 0, 0, 0, -0.99987656, 0.015713774, 0, -0.015713774, -0.99987656, 0, 3.5533972, -5.2345676)
+light_energy = 2.431
+light_indirect_energy = 9.38
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 0.0
+
+[node name="Colored Cubes1" parent="SubViewportContainer/SubViewport" unique_id=1480546910 instance=ExtResource("3_755ef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 1, -100)

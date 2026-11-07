@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dwmyrs6wm0axh"]
+
+[ext_resource type="Script" uid="uid://c2v5ydcx1m81q" path="res://Objects/spike.gd" id="1_tt47n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(105, 267)
+
+[node name="DeathBox" type="Area2D" unique_id=1057256729]
+script = ExtResource("1_tt47n")
+color = Color(0, 1, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=16995322]
+position = Vector2(0.5, -133.5)
+scale = Vector2(2.56, 1)
+shape = SubResource("RectangleShape2D_57qmd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

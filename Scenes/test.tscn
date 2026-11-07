@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/moving_platform.tscn" id="1_lc1oi"]
 [ext_resource type="PackedScene" uid="uid://dbqwrukmrtwcx" path="res://Objects/falling_platform.tscn" id="2_qc4db"]
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="3_ys1qc"]
+[ext_resource type="PackedScene" uid="uid://cxxjab1vqgv00" path="res://Objects/platform.tscn" id="4_35xla"]
+[ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="5_35xla"]
 
 [node name="Test" type="Node2D" unique_id=462766896]
 
@@ -10,3 +13,16 @@ position = Vector2(516, 415)
 
 [node name="FallingPlatform" parent="." unique_id=1415419561 instance=ExtResource("2_qc4db")]
 position = Vector2(260, 380)
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("3_ys1qc")]
+position = Vector2(-1229, -1186)
+max_speed = 10000.0
+acceleration = 1000000.0
+
+[node name="Platform" parent="." unique_id=1485412247 instance=ExtResource("4_35xla")]
+position = Vector2(-1252, -182)
+color = Color(0, 0, 1, 1)
+
+[node name="DeathBox" parent="." unique_id=1057256729 instance=ExtResource("5_35xla")]
+position = Vector2(-1195, -34)
+scale = Vector2(33.15857, 0.6785657)
