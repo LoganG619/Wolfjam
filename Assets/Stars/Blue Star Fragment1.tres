@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b2bg05q5p77hh"]
+
+[ext_resource type="Texture2D" uid="uid://dfyyloe4oq57a" path="res://Assets/Stars/Blue Star Fragment 1_Blue Star Fragment1_ColorMap.png" id="1_ijccf"]
+[ext_resource type="Texture2D" uid="uid://d2mnpinmi3scv" path="res://Assets/Stars/Blue Star Fragment 1_Blue Star Fragment1_MetalnessMap-Blue Star Fragment1_RoughnessMap.png" id="2_gd2d5"]
+[ext_resource type="Texture2D" uid="uid://8idl7gfbp061" path="res://Assets/Stars/Blue Star Fragment 1_Blue Star Fragment1_NormalMap.png" id="3_0j3u8"]
+
+[resource]
+resource_name = "Blue Star Fragment1"
+cull_mode = 2
+albedo_texture = ExtResource("1_ijccf")
+metallic = 1.0
+metallic_texture = ExtResource("2_gd2d5")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_gd2d5")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_0j3u8")
+metadata/_gltf_primary_texture_coord = 0
