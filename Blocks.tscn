@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b45xy6jrgwxxi"]
 
-[ext_resource type="PackedScene" uid="uid://cuhfpewbg03ot" path="res://Assets/Colored Cubes1.glb" id="1_grwwf"]
-[ext_resource type="PackedScene" uid="uid://dvqjw5x8rfgt1" path="res://Assets/Colored Cubes2.glb" id="2_4137d"]
-[ext_resource type="PackedScene" uid="uid://bs36gi7kekmv5" path="res://Assets/Colored Cubes3.glb" id="3_mtro2"]
-[ext_resource type="PackedScene" uid="uid://c6vsd24khg1jf" path="res://Assets/Colored Cubes4.glb" id="4_mcxa2"]
-[ext_resource type="PackedScene" uid="uid://cj6wb3i22gu33" path="res://Assets/Colored Cubes5.glb" id="5_qbpr1"]
+[ext_resource type="PackedScene" uid="uid://cuhfpewbg03ot" path="res://Assets/Cubes/Colored Cubes1.glb" id="1_grwwf"]
+[ext_resource type="PackedScene" uid="uid://dvqjw5x8rfgt1" path="res://Assets/Cubes/Colored Cubes2.glb" id="2_4137d"]
+[ext_resource type="PackedScene" uid="uid://bs36gi7kekmv5" path="res://Assets/Cubes/Colored Cubes3.glb" id="3_mtro2"]
+[ext_resource type="PackedScene" uid="uid://c6vsd24khg1jf" path="res://Assets/Cubes/Colored Cubes4.glb" id="4_mcxa2"]
+[ext_resource type="PackedScene" uid="uid://cj6wb3i22gu33" path="res://Assets/Cubes/Colored Cubes5.glb" id="5_qbpr1"]
 
 [node name="Node3D" type="Node3D" unique_id=707605058]
 
