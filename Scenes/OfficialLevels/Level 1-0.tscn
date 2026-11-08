@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_25j05"]
 [ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="2_xm4xe"]
+[ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="3_fajwd"]
+[ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_60hvl"]
+[ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="5_60hvl"]
 
 [node name="Level10" type="Node2D" unique_id=2077130365]
 
@@ -40,3 +43,43 @@ position = Vector2(-2472, 17)
 
 [node name="BlackPlatform9" parent="." unique_id=1229931425 instance=ExtResource("2_xm4xe")]
 position = Vector2(-2472, -183)
+
+[node name="BlackPlatform10" parent="." unique_id=303565957 instance=ExtResource("2_xm4xe")]
+position = Vector2(-1057, 202)
+
+[node name="BlackPlatform11" parent="." unique_id=405176680 instance=ExtResource("2_xm4xe")]
+position = Vector2(-580, 6)
+
+[node name="BlackPlatform12" parent="." unique_id=994313367 instance=ExtResource("2_xm4xe")]
+position = Vector2(-372, 0)
+
+[node name="BlackPlatform13" parent="." unique_id=1966384550 instance=ExtResource("2_xm4xe")]
+position = Vector2(105, 226)
+
+[node name="BlackPlatform14" parent="." unique_id=276126392 instance=ExtResource("2_xm4xe")]
+position = Vector2(307, 233)
+
+[node name="BlackPlatform15" parent="." unique_id=834549943 instance=ExtResource("2_xm4xe")]
+position = Vector2(716, 0)
+
+[node name="BlackPlatform16" parent="." unique_id=275826538 instance=ExtResource("2_xm4xe")]
+position = Vector2(924, -6)
+
+[node name="BluePlatform" parent="." unique_id=1896793531 instance=ExtResource("3_fajwd")]
+position = Vector2(1242, -226)
+
+[node name="RedPlatform" parent="." unique_id=1589118120 instance=ExtResource("4_60hvl")]
+position = Vector2(1585, -483)
+
+[node name="BluePlatform2" parent="." unique_id=1551148347 instance=ExtResource("3_fajwd")]
+position = Vector2(1891, -734)
+
+[node name="RedPlatform2" parent="." unique_id=1224461515 instance=ExtResource("4_60hvl")]
+position = Vector2(2160, -966)
+
+[node name="BlackPlatform17" parent="." unique_id=1907878571 instance=ExtResource("2_xm4xe")]
+position = Vector2(2392, -1211)
+
+[node name="DeathBox" parent="." unique_id=1057256729 instance=ExtResource("5_60hvl")]
+position = Vector2(-2024, 1260)
+scale = Vector2(45.592907, -0.16399024)
