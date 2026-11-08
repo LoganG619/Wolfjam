@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://burv2av1m7cth"]
+
+[ext_resource type="Script" uid="uid://ci3bjlwl6l3t2" path="res://Objects/Stars/StarFragment.gd" id="1_twqdm"]
+[ext_resource type="Texture2D" uid="uid://c6cood30thp27" path="res://Objects/Stars/yellowstar.png" id="2_7xvov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(301, 286)
+
+[node name="YellowStarFragment3" type="Area2D" unique_id=2076488642]
+script = ExtResource("1_twqdm")
+starType = 2
+level_id = "2-3"
+fragment_id = "3"
+fragment_piece = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535494117]
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1366951237]
+position = Vector2(221.99998, 77.99999)
+scale = Vector2(1.2799963, 1.2799963)
+texture = ExtResource("2_7xvov")

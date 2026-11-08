@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bdnuabapdq4kc"]
+
+[ext_resource type="Script" uid="uid://ci3bjlwl6l3t2" path="res://Objects/Stars/StarFragment.gd" id="1_gcu5b"]
+[ext_resource type="Texture2D" uid="uid://dhnurafp1vudk" path="res://Objects/Stars/greenstar.png" id="2_6mfm5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(301, 286)
+
+[node name="GreenStarFragment2" type="Area2D" unique_id=2076488642]
+script = ExtResource("1_gcu5b")
+starType = 1
+level_id = "1-2"
+fragment_id = "2"
+fragment_piece = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535494117]
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=69096303]
+position = Vector2(327, 155)
+scale = Vector2(1.2799963, 1.2799963)
+texture = ExtResource("2_6mfm5")

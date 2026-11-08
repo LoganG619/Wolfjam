@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_mt2g7"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="3_kv8cg"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="4_mt2g7"]
+[ext_resource type="PackedScene" uid="uid://cd3uwhvatkc8d" path="res://Objects/Stars/GreenStarFragment3.tscn" id="5_kv8cg"]
 
 [node name="Level13" type="Node2D" unique_id=368397737]
 
@@ -69,3 +70,6 @@ position = Vector2(3940, 1119)
 
 [node name="RedPlatform9" parent="." unique_id=1952359661 instance=ExtResource("3_kv8cg")]
 position = Vector2(4138, 1119)
+
+[node name="GreenStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("5_kv8cg")]
+position = Vector2(4173, 735)

@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="4_p02ow"]
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_rd6tg"]
 [ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/BlueSpike.tscn" id="6_wnpk8"]
+[ext_resource type="PackedScene" uid="uid://ug3xp71d71mg" path="res://Objects/Stars/YellowStarFragment1.tscn" id="7_rd6tg"]
 
 [node name="Level21" type="Node2D" unique_id=403041392]
 position = Vector2(-31, -3)
@@ -81,3 +82,6 @@ position = Vector2(2078, -698)
 [node name="GreenSpike4" parent="." unique_id=2072745386 instance=ExtResource("4_p02ow")]
 position = Vector2(-15, 216)
 rotation = -1.5552586
+
+[node name="YellowStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("7_rd6tg")]
+position = Vector2(2707, -598)

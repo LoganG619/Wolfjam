@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bmedtw8qyak0c"]
+
+[ext_resource type="Script" uid="uid://ci3bjlwl6l3t2" path="res://Objects/Stars/StarFragment.gd" id="1_wkjh2"]
+[ext_resource type="Texture2D" uid="uid://cuemxbl37f73h" path="res://Objects/Stars/whitestar.png" id="2_wkjh2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(301, 286)
+
+[node name="WhiteStarFragment2" type="Area2D" unique_id=2076488642]
+script = ExtResource("1_wkjh2")
+starType = 3
+level_id = "3-2"
+fragment_id = "2"
+fragment_piece = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535494117]
+shape = SubResource("RectangleShape2D_6pmnr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1366951237]
+position = Vector2(192.99998, -15.000008)
+scale = Vector2(1.2799963, 1.2799963)
+texture = ExtResource("2_wkjh2")

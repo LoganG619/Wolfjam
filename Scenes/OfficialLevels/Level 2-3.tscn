@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bwmm1g0b3q0rp"]
+[gd_scene format=3 uid="uid://da05mllc1hsy3"]
 
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_mwa3o"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_80t8c"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="8_6gr0h"]
 [ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/BlueSpike.tscn" id="9_quq3w"]
 [ext_resource type="PackedScene" uid="uid://b6rke76s5cid2" path="res://Objects/green_moving_platform.tscn" id="10_h1cvw"]
+[ext_resource type="PackedScene" uid="uid://burv2av1m7cth" path="res://Objects/Stars/YellowStarFragment3.tscn" id="11_h1cvw"]
 
 [node name="Level2-3" type="Node2D" unique_id=592921119]
 
@@ -89,3 +90,6 @@ position = Vector2(3434, 1021)
 
 [node name="GreenPlatform5" parent="." unique_id=1962076859 instance=ExtResource("3_6gr0h")]
 position = Vector2(3641, 1021)
+
+[node name="YellowStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("11_h1cvw")]
+position = Vector2(3647, 638)
