@@ -5,12 +5,16 @@
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="3_fajwd"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_60hvl"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="5_60hvl"]
+[ext_resource type="PackedScene" uid="uid://djovppayfpaqj" path="res://Objects/Stars/WhiteStarFragment1.tscn" id="6_8m6oo"]
 
 [node name="Level10" type="Node2D" unique_id=2077130365]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1840617861]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -7838.0
+offset_top = -3143.0
+offset_right = 7979.0
+offset_bottom = 3507.0
+color = Color(0.16565639, 0.16565642, 0.16565639, 1)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_25j05")]
 position = Vector2(-1862, -30)
@@ -52,22 +56,22 @@ position = Vector2(-2470, -159)
 position = Vector2(-1057, 206)
 
 [node name="BlackPlatform11" parent="." unique_id=405176680 instance=ExtResource("2_xm4xe")]
-position = Vector2(-580, 6)
+position = Vector2(-572, -12)
 
 [node name="BlackPlatform12" parent="." unique_id=994313367 instance=ExtResource("2_xm4xe")]
-position = Vector2(-372, 0)
+position = Vector2(-367, -12)
 
 [node name="BlackPlatform13" parent="." unique_id=1966384550 instance=ExtResource("2_xm4xe")]
-position = Vector2(105, 226)
+position = Vector2(99, 206)
 
 [node name="BlackPlatform14" parent="." unique_id=276126392 instance=ExtResource("2_xm4xe")]
-position = Vector2(307, 233)
+position = Vector2(303, 206)
 
 [node name="BlackPlatform15" parent="." unique_id=834549943 instance=ExtResource("2_xm4xe")]
 position = Vector2(716, 0)
 
 [node name="BlackPlatform16" parent="." unique_id=275826538 instance=ExtResource("2_xm4xe")]
-position = Vector2(924, -6)
+position = Vector2(921, 0)
 
 [node name="BluePlatform" parent="." unique_id=1896793531 instance=ExtResource("3_fajwd")]
 position = Vector2(1242, -226)
@@ -79,11 +83,37 @@ position = Vector2(1585, -483)
 position = Vector2(1891, -734)
 
 [node name="RedPlatform2" parent="." unique_id=1224461515 instance=ExtResource("4_60hvl")]
-position = Vector2(2160, -966)
+position = Vector2(2545, -1152)
 
 [node name="BlackPlatform17" parent="." unique_id=1907878571 instance=ExtResource("2_xm4xe")]
-position = Vector2(2392, -1211)
+position = Vector2(2809, -1445)
 
 [node name="DeathBox" parent="." unique_id=1057256729 instance=ExtResource("5_60hvl")]
 position = Vector2(-2024, 1260)
 scale = Vector2(45.592907, -0.16399024)
+
+[node name="Label" type="Label" parent="." unique_id=1968407761]
+offset_left = 547.0
+offset_top = -444.0
+offset_right = 1098.0
+offset_bottom = -265.0
+theme_override_font_sizes/font_size = 64
+text = "Press 2, to see
+the path foward..."
+
+[node name="Label" type="Label" parent="Label" unique_id=1051076931]
+layout_mode = 0
+offset_left = 1634.0
+offset_top = -595.0
+offset_right = 2348.0
+offset_bottom = -416.0
+theme_override_font_sizes/font_size = 64
+text = "Press 1, to see the next
+stepping stone..."
+
+[node name="WhiteStarFragment" parent="." unique_id=2076488642 instance=ExtResource("6_8m6oo")]
+position = Vector2(2802, -1813)
+starType = 1
+level_id = "1-0"
+fragment_id = "0"
+fragment_piece = 0

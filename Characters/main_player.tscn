@@ -41,6 +41,7 @@ dash_timer = NodePath("DashTime")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2025882131]
 process_mode = 3
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=930815453]
 offset_left = 1.0
