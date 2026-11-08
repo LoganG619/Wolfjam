@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://cpktyg03112gj"]
 
+[ext_resource type="PackedScene" uid="uid://bjq3mtkb4w3vk" path="res://Scenes/blue_background.tscn" id="1_ml2qx"]
 [ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="1_ovvkm"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="2_kcgwg"]
+[ext_resource type="PackedScene" uid="uid://dncytelib2btv" path="res://Scenes/green_background.tscn" id="2_m0kw6"]
+[ext_resource type="PackedScene" uid="uid://b425q1d4fu3fp" path="res://Scenes/yellow_background.tscn" id="3_0puty"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="3_x8skm"]
+[ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_lp2fn"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="4_xy1ox"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="5_1yngl"]
 [ext_resource type="PackedScene" uid="uid://cnhtynjckdhbk" path="res://Objects/red_spike.tscn" id="6_i7jpv"]
@@ -13,6 +17,22 @@
 [ext_resource type="PackedScene" uid="uid://bcp4h7u7v6dbm" path="res://Objects/yellow_spike.tscn" id="11_i7jpv"]
 
 [node name="Level33" type="Node2D" unique_id=1241677025]
+
+[node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_ml2qx")]
+position = Vector2(2159, 348)
+scale = Vector2(6.422, 3.348)
+
+[node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_m0kw6")]
+position = Vector2(2179.0002, 319)
+scale = Vector2(6.422, 3.348)
+
+[node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_0puty")]
+position = Vector2(2159, 311.00003)
+scale = Vector2(6.422, 3.348)
+
+[node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_lp2fn")]
+position = Vector2(2169, 312)
+scale = Vector2(6.422, 3.348)
 
 [node name="BlackPlatform" parent="." unique_id=1485412247 instance=ExtResource("1_ovvkm")]
 position = Vector2(-1514, -34)
