@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bcp4h7u7v6dbm" path="res://Objects/yellow_spike.tscn" id="10_8mi5o"]
 [ext_resource type="PackedScene" uid="uid://cg5sl87r0weqv" path="res://Objects/RedLazer.tscn" id="11_neqx1"]
 [ext_resource type="PackedScene" uid="uid://we7ddup3w61y" path="res://Objects/red_moving_platform.tscn" id="12_e8mok"]
+[ext_resource type="PackedScene" uid="uid://bt6rr5bqqtw8g" path="res://Objects/Stars/GreenStarFragment1.tscn" id="13_8mi5o"]
 
 [node name="Level32" type="Node2D" unique_id=1598556913]
 
@@ -107,3 +108,10 @@ position = Vector2(-1701, 733)
 
 [node name="RedSpike4" parent="." unique_id=1955056688 instance=ExtResource("5_8mi5o")]
 position = Vector2(-1433, 799)
+
+[node name="GreenStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("13_8mi5o")]
+position = Vector2(-1697, 396)
+starType = 3
+level_id = "3-1"
+fragment_id = "2"
+fragment_piece = 2

@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bcp4h7u7v6dbm" path="res://Objects/yellow_spike.tscn" id="11_0o3f1"]
 [ext_resource type="PackedScene" uid="uid://cnhtynjckdhbk" path="res://Objects/red_spike.tscn" id="13_0o3f1"]
 [ext_resource type="PackedScene" uid="uid://b16asevlok1ho" path="res://Objects/yellow_moving_platform.tscn" id="13_ktl04"]
+[ext_resource type="PackedScene" uid="uid://ug3xp71d71mg" path="res://Objects/Stars/YellowStarFragment1.tscn" id="13_mga6l"]
 
 [node name="Level31" type="Node2D" unique_id=1178360115]
 
@@ -106,6 +107,11 @@ position = Vector2(4214, -862)
 [node name="YellowPlatform5" parent="." unique_id=1614188127 instance=ExtResource("2_g4qbd")]
 position = Vector2(4421.9995, -861.99994)
 rotation = 0.004872379
+
+[node name="YellowStarFragment1" parent="YellowPlatform5" unique_id=2076488642 instance=ExtResource("13_mga6l")]
+position = Vector2(-99.73779, -356.51843)
+starType = 3
+level_id = "3-1"
 
 [node name="YellowLazer2" parent="." unique_id=2039992621 instance=ExtResource("4_g4qbd")]
 position = Vector2(3027, -721)
