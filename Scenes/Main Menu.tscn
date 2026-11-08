@@ -14,15 +14,17 @@
 position = Vector2(-107, -457)
 script = ExtResource("1_totuj")
 
-[node name="Button manager" type="Control" parent="." unique_id=815185851]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1288931754]
+
+[node name="Button manager" type="Control" parent="CanvasLayer" unique_id=815185851]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 11392.0
-offset_top = -41984.0
-offset_right = 11432.0
-offset_bottom = -41944.0
+offset_left = 11285.0
+offset_top = -42441.0
+offset_right = 11325.0
+offset_bottom = -42401.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Button manager" unique_id=1200687657]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Button manager" unique_id=1200687657]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -37,27 +39,28 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.0454092, 1.1108769)
 
-[node name="Start" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=272166706]
+[node name="Start" type="TextureButton" parent="CanvasLayer/Button manager/VBoxContainer" unique_id=272166706]
+unique_name_in_owner = true
 layout_mode = 2
 texture_normal = ExtResource("2_ur25d")
 texture_hover = ExtResource("3_eotax")
 
-[node name="Settings" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=1444801950]
+[node name="Settings" type="TextureButton" parent="CanvasLayer/Button manager/VBoxContainer" unique_id=1444801950]
 layout_mode = 2
 texture_normal = ExtResource("4_0vewo")
 texture_hover = ExtResource("5_wib81")
 
-[node name="Controls" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=102847270]
+[node name="Controls" type="TextureButton" parent="CanvasLayer/Button manager/VBoxContainer" unique_id=102847270]
 layout_mode = 2
 texture_normal = ExtResource("6_tbdrc")
 texture_hover = ExtResource("7_vuees")
 
-[node name="Quit" type="TextureButton" parent="Button manager/VBoxContainer" unique_id=1816907097]
+[node name="Quit" type="TextureButton" parent="CanvasLayer/Button manager/VBoxContainer" unique_id=1816907097]
 layout_mode = 2
 texture_normal = ExtResource("8_3hb06")
 texture_hover = ExtResource("9_ns28u")
 
-[connection signal="pressed" from="Button manager/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button manager/VBoxContainer/Settings" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button manager/VBoxContainer/Controls" to="." method="_on_controls_pressed"]
-[connection signal="pressed" from="Button manager/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button manager/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button manager/VBoxContainer/Settings" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button manager/VBoxContainer/Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button manager/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

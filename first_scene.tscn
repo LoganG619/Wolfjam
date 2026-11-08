@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://duarx5ths4j1f"]
+
+[ext_resource type="Script" uid="uid://bgeajdf8nxeda" path="res://first_scene.gd" id="1_y5rs1"]
+[ext_resource type="Texture2D" uid="uid://b218nk88f4wxc" path="res://Characters/prism.png" id="2_5qpg1"]
+
+[node name="FirstScene" type="Node2D" unique_id=1818771670]
+script = ExtResource("1_y5rs1")
+
+[node name="Prism" type="Sprite2D" parent="." unique_id=1264826321]
+position = Vector2(576.00006, 324)
+scale = Vector2(5.236364, 5.2258067)
+texture = ExtResource("2_5qpg1")
+
+[node name="Button" type="Button" parent="." unique_id=1027095546]
+modulate = Color(1, 1, 1, 0)
+offset_left = 309.0
+offset_top = 280.0
+offset_right = 792.0
+offset_bottom = 372.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

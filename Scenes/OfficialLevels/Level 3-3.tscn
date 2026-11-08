@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://we7ddup3w61y" path="res://Objects/red_moving_platform.tscn" id="9_l5aye"]
 [ext_resource type="PackedScene" uid="uid://deujimfkfon81" path="res://Objects/yellow_lazer.tscn" id="10_b266a"]
 [ext_resource type="PackedScene" uid="uid://bcp4h7u7v6dbm" path="res://Objects/yellow_spike.tscn" id="11_i7jpv"]
+[ext_resource type="PackedScene" uid="uid://cwxv1r2qo48n5" path="res://Objects/Stars/WhiteStarFragment3.tscn" id="16_m0kw6"]
 
 [node name="Level33" type="Node2D" unique_id=1241677025]
 
@@ -231,3 +232,8 @@ rotation = 0.03695321
 [node name="YellowSpike6" parent="YellowSpike6/YellowSpike6" unique_id=1413729290 instance=ExtResource("11_i7jpv")]
 position = Vector2(-219.00964, 3.4405518)
 rotation = 0.03695321
+
+[node name="WhiteStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("16_m0kw6")]
+position = Vector2(2096, -2996)
+
+[connection signal="body_entered" from="WhiteStarFragment3" to="WhiteStarFragment3" method="_on_body_entered"]

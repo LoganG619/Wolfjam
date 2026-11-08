@@ -65,17 +65,17 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 64.0
 offset_top = 387.0
-offset_right = 470.0
+offset_right = 345.0
 offset_bottom = 595.0
 theme_override_font_sizes/font_size = 70
 text = "Resume"
 
 [node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=1704773964]
 layout_mode = 0
-offset_left = 673.0
-offset_top = 384.0
-offset_right = 1064.0
-offset_bottom = 600.0
+offset_left = 800.0
+offset_top = 383.0
+offset_right = 1107.0
+offset_bottom = 599.0
 theme_override_font_sizes/font_size = 70
 text = "Quit"
 
