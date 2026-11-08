@@ -1,12 +1,32 @@
 [gd_scene format=3 uid="uid://cudd5n2r22131"]
 
+[ext_resource type="PackedScene" uid="uid://bjq3mtkb4w3vk" path="res://Scenes/blue_background.tscn" id="1_gdath"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_v7xlw"]
+[ext_resource type="PackedScene" uid="uid://dncytelib2btv" path="res://Scenes/green_background.tscn" id="2_kncyj"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_mt2g7"]
+[ext_resource type="PackedScene" uid="uid://b425q1d4fu3fp" path="res://Scenes/yellow_background.tscn" id="3_ieh2n"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="3_kv8cg"]
+[ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_m170f"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="4_mt2g7"]
 [ext_resource type="PackedScene" uid="uid://cd3uwhvatkc8d" path="res://Objects/Stars/GreenStarFragment3.tscn" id="5_kv8cg"]
 
 [node name="Level13" type="Node2D" unique_id=368397737]
+
+[node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_gdath")]
+position = Vector2(2159, 348)
+scale = Vector2(6.422, 3.348)
+
+[node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_kncyj")]
+position = Vector2(2179.0002, 319)
+scale = Vector2(6.422, 3.348)
+
+[node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_ieh2n")]
+position = Vector2(2159, 311.00003)
+scale = Vector2(6.422, 3.348)
+
+[node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_m170f")]
+position = Vector2(2169, 312)
+scale = Vector2(6.422, 3.348)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_v7xlw")]
 position = Vector2(235, 380)

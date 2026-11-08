@@ -1,15 +1,35 @@
 [gd_scene format=3 uid="uid://cve5hjoqf1rvi"]
 
+[ext_resource type="PackedScene" uid="uid://bjq3mtkb4w3vk" path="res://Scenes/blue_background.tscn" id="1_1kyy5"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="1_i7wln"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="2_66axg"]
+[ext_resource type="PackedScene" uid="uid://dncytelib2btv" path="res://Scenes/green_background.tscn" id="2_075g7"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="3_m1cc7"]
+[ext_resource type="PackedScene" uid="uid://b425q1d4fu3fp" path="res://Scenes/yellow_background.tscn" id="3_pno1v"]
 [ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="4_p02ow"]
+[ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_wf77j"]
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_rd6tg"]
 [ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/BlueSpike.tscn" id="6_wnpk8"]
 [ext_resource type="PackedScene" uid="uid://ug3xp71d71mg" path="res://Objects/Stars/YellowStarFragment1.tscn" id="7_rd6tg"]
 
 [node name="Level21" type="Node2D" unique_id=403041392]
 position = Vector2(-31, -3)
+
+[node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_1kyy5")]
+position = Vector2(2159, 348)
+scale = Vector2(6.422, 3.348)
+
+[node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_075g7")]
+position = Vector2(2179.0002, 319)
+scale = Vector2(6.422, 3.348)
+
+[node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_pno1v")]
+position = Vector2(2159, 311.00003)
+scale = Vector2(6.422, 3.348)
+
+[node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_wf77j")]
+position = Vector2(2169, 312)
+scale = Vector2(6.422, 3.348)
 
 [node name="BluePlatform" parent="." unique_id=1485412247 instance=ExtResource("1_i7wln")]
 position = Vector2(89, 303)
