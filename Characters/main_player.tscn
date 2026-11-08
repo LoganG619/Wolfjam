@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dyfuj65i55bqj" path="res://Characters/player.gd" id="1_34sme"]
 [ext_resource type="PackedScene" uid="uid://ctsgq4wlqq3ld" path="res://Assets/Character/Character proto.glb" id="2_rhlke"]
 [ext_resource type="AudioStream" uid="uid://bfc5xye7hvqki" path="res://Sound/859978__gm_isaac__8_bit-videogame-death-sound.wav" id="3_rhlke"]
+[ext_resource type="AudioStream" uid="uid://cxmbwttfntrm4" path="res://Sound/607942__bloodpixelhero__retro-arcade-music-3.wav" id="4_asny4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_evi0p"]
 radius = 37.500008
@@ -38,15 +39,54 @@ hue_variation_max = 0.99999994
 script = ExtResource("1_34sme")
 dash_timer = NodePath("DashTime")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2025882131]
+process_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=930815453]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.17785347, 0.17785347, 0.17785347, 0.6745098)
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect" unique_id=56691004]
+layout_mode = 0
+offset_left = -213.0
+offset_top = 28.0
+offset_right = 1323.0
+offset_bottom = 301.0
+theme_override_font_sizes/font_size = 200
+text = " Paused..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Resume" type="Button" parent="CanvasLayer/ColorRect" unique_id=531439321]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 387.0
+offset_right = 470.0
+offset_bottom = 595.0
+theme_override_font_sizes/font_size = 70
+text = "Resume"
+
+[node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=1704773964]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 384.0
+offset_right = 1064.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 70
+text = "Quit"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=778276785]
 position = Vector2(-0.5, -96.00001)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("CapsuleShape2D_evi0p")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=688451280]
-offset_left = -512.0
+offset_left = -513.0
 offset_top = -806.0
-offset_right = 512.0
+offset_right = 511.0
 offset_bottom = 218.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1820713871]
@@ -104,4 +144,10 @@ stream = ExtResource("3_rhlke")
 
 [node name="Listener" type="AudioListener2D" parent="." unique_id=1125710500]
 
+[node name="Background song" type="AudioStreamPlayer2D" parent="." unique_id=1150419866]
+stream = ExtResource("4_asny4")
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/ColorRect/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/ColorRect/Quit" to="." method="_on_quit_pressed"]
 [connection signal="timeout" from="DashTime" to="." method="_on_dash_time_timeout"]

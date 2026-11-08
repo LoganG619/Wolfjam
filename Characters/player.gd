@@ -31,6 +31,11 @@ func _physics_process(delta: float) -> void:
 	else :
 		doubleJumped = false
 	
+	if Input.is_action_just_pressed("Pause"):
+		$CanvasLayer.visible = true
+		$"Background song".stream_paused = true
+		get_tree().paused = true
+		
 	# Jumping
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jumpVelocity
@@ -111,3 +116,13 @@ func _on_dash_time_timeout() -> void:
 	
 func dieForReal():
 	get_tree().reload_current_scene()
+
+
+func _on_resume_pressed() -> void:
+	$CanvasLayer.visible = false
+	get_tree().paused = false
+	$"Background song".stream_paused = false
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
