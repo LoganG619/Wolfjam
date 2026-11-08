@@ -117,3 +117,5 @@ starType = 1
 level_id = "1-0"
 fragment_id = "0"
 fragment_piece = 0
+
+[connection signal="body_entered" from="WhiteStarFragment" to="WhiteStarFragment" method="_on_body_entered"]
