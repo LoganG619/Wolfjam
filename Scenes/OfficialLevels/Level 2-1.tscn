@@ -85,3 +85,5 @@ rotation = -1.5552586
 
 [node name="YellowStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("7_rd6tg")]
 position = Vector2(2707, -598)
+
+[connection signal="body_entered" from="YellowStarFragment1" to="YellowStarFragment1" method="_on_body_entered"]

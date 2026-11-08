@@ -71,3 +71,5 @@ scale = Vector2(42.320004, 1)
 
 [node name="YellowStarFragment2" parent="." unique_id=2076488642 instance=ExtResource("8_dc8u0")]
 position = Vector2(2201, -879)
+
+[connection signal="body_entered" from="YellowStarFragment2" to="YellowStarFragment2" method="_on_body_entered"]

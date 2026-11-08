@@ -79,3 +79,5 @@ position = Vector2(842, 627)
 
 [node name="GreenStarFragment2" parent="." unique_id=2076488642 instance=ExtResource("6_ebryc")]
 position = Vector2(3097, 23)
+
+[connection signal="body_entered" from="GreenStarFragment2" to="GreenStarFragment2" method="_on_body_entered"]

@@ -78,6 +78,7 @@ position = Vector2(3024, 1228)
 
 [node name="GreenSpike2" parent="." unique_id=1051519228 instance=ExtResource("4_quq3w")]
 position = Vector2(3024, 1016)
+color = Color(1, 0, 0, 1)
 
 [node name="BluePlatform4" parent="." unique_id=443761067 instance=ExtResource("2_80t8c")]
 position = Vector2(3227, 1228)
@@ -93,3 +94,5 @@ position = Vector2(3641, 1021)
 
 [node name="YellowStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("11_h1cvw")]
 position = Vector2(3647, 638)
+
+[connection signal="body_entered" from="YellowStarFragment3" to="YellowStarFragment3" method="_on_body_entered"]

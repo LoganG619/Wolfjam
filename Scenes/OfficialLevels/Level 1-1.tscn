@@ -64,5 +64,3 @@ position = Vector2(4071, 265)
 
 [node name="GreenStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("5_nmcdj")]
 position = Vector2(4073, -88)
-level_id = "1-1"
-fragment_id = "1"
