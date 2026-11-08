@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://755c0eh17kyx"]
 
+[ext_resource type="PackedScene" uid="uid://bjq3mtkb4w3vk" path="res://Scenes/blue_background.tscn" id="1_5inb4"]
+[ext_resource type="PackedScene" uid="uid://dncytelib2btv" path="res://Scenes/green_background.tscn" id="2_a7clu"]
 [ext_resource type="PackedScene" uid="uid://b4hwbynw63cc3" path="res://Objects/yellow_platform.tscn" id="2_g4qbd"]
+[ext_resource type="PackedScene" uid="uid://b425q1d4fu3fp" path="res://Scenes/yellow_background.tscn" id="3_kvcte"]
 [ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/BlueMovingPlatform.tscn" id="3_ngp0h"]
+[ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_36u62"]
 [ext_resource type="PackedScene" uid="uid://deujimfkfon81" path="res://Objects/yellow_lazer.tscn" id="4_g4qbd"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="4_yydk1"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="5_gk6ia"]
@@ -16,6 +20,22 @@
 [ext_resource type="PackedScene" uid="uid://ug3xp71d71mg" path="res://Objects/Stars/YellowStarFragment1.tscn" id="13_mga6l"]
 
 [node name="Level31" type="Node2D" unique_id=1178360115]
+
+[node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_5inb4")]
+position = Vector2(2159, 348)
+scale = Vector2(6.422, 3.348)
+
+[node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_a7clu")]
+position = Vector2(2179.0002, 319)
+scale = Vector2(6.422, 3.348)
+
+[node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_kvcte")]
+position = Vector2(2159, 311.00003)
+scale = Vector2(6.422, 3.348)
+
+[node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_36u62")]
+position = Vector2(2169, 312)
+scale = Vector2(6.422, 3.348)
 
 [node name="BluePlatform" parent="." unique_id=262366615 instance=ExtResource("4_yydk1")]
 position = Vector2(102, 337)
@@ -105,7 +125,7 @@ position = Vector2(3374, -512)
 position = Vector2(4214, -862)
 
 [node name="YellowPlatform5" parent="." unique_id=1614188127 instance=ExtResource("2_g4qbd")]
-position = Vector2(4421.9995, -861.99994)
+position = Vector2(4410, -862)
 rotation = 0.004872379
 
 [node name="YellowStarFragment1" parent="YellowPlatform5" unique_id=2076488642 instance=ExtResource("13_mga6l")]
