@@ -128,8 +128,9 @@ position = Vector2(4214, -862)
 position = Vector2(4410, -862)
 rotation = 0.004872379
 
-[node name="YellowStarFragment1" parent="YellowPlatform5" unique_id=2076488642 instance=ExtResource("13_mga6l")]
-position = Vector2(-99.73779, -356.51843)
+[node name="YellowStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("13_mga6l")]
+position = Vector2(4312.0005, -1219.0001)
+rotation = 0.004872379
 starType = 3
 level_id = "3-1"
 
@@ -143,3 +144,5 @@ position = Vector2(2972, 386)
 [node name="RedSpike" parent="." unique_id=1264060678 instance=ExtResource("13_0o3f1")]
 position = Vector2(3607.9998, 662)
 rotation = 1.5460999
+
+[connection signal="body_entered" from="YellowStarFragment1" to="YellowStarFragment1" method="_on_body_entered"]
