@@ -38,7 +38,7 @@ scale = Vector2(6.422, 3.348)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_3ulx8")]
 position = Vector2(67, 244)
-max_speed = 5000.0
+max_speed = 2500.0
 acceleration = 10000.0
 deceleration = 10000.0
 jumpVelocity = -1500.0
@@ -132,6 +132,6 @@ position = Vector2(-1433, 799)
 [node name="GreenStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("13_8mi5o")]
 position = Vector2(-1697, 396)
 starType = 3
-level_id = "3-1"
+level_id = "3-2"
 fragment_id = "2"
 fragment_piece = 2
