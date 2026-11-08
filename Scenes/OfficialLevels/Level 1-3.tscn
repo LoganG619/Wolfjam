@@ -14,19 +14,19 @@
 
 [node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_gdath")]
 position = Vector2(2159, 348)
-scale = Vector2(6.422, 3.348)
+scale = Vector2(8.009441, 4.1755857)
 
 [node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_kncyj")]
 position = Vector2(2179.0002, 319)
-scale = Vector2(6.422, 3.348)
+scale = Vector2(8.009441, 4.1755857)
 
 [node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_ieh2n")]
 position = Vector2(2159, 311.00003)
-scale = Vector2(6.422, 3.348)
+scale = Vector2(8.009441, 4.1755857)
 
 [node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_m170f")]
 position = Vector2(2169, 312)
-scale = Vector2(6.422, 3.348)
+scale = Vector2(8.009441, 4.1755857)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_v7xlw")]
 position = Vector2(235, 380)

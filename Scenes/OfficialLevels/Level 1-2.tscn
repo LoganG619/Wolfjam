@@ -26,8 +26,8 @@ position = Vector2(2159, 311.00003)
 scale = Vector2(6.422, 3.348)
 
 [node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_w0p8r")]
-position = Vector2(2169, 312)
-scale = Vector2(6.422, 3.348)
+position = Vector2(1911.9996, 359.00012)
+scale = Vector2(6.936, 4.0720005)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("2_sfdvs")]
 position = Vector2(-324, 40)
