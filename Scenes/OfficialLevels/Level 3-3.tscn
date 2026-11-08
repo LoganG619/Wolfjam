@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cpktyg03112gj"]
+
+[ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="1_ovvkm"]
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="2_kcgwg"]
+[ext_resource type="PackedScene" uid="uid://c4atxanv05bgw" path="res://Objects/BlueMovingPlatform.tscn" id="3_r5bfo"]
+[ext_resource type="PackedScene" uid="uid://do6pe1a0wxh7i" path="res://Objects/BlueLazer.tscn" id="4_vn1oy"]
+
+[node name="Level33" type="Node2D" unique_id=1241677025]
+
+[node name="BlackPlatform" parent="." unique_id=1485412247 instance=ExtResource("1_ovvkm")]
+position = Vector2(-1514, -34)
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("2_kcgwg")]
+position = Vector2(-1513, -236)
+
+[node name="BlueMovingPlatform" parent="." unique_id=270998160 instance=ExtResource("3_r5bfo")]
+position = Vector2(-852, -391)
+
+[node name="BlueLazer" parent="BlueMovingPlatform" unique_id=1057256729 instance=ExtResource("4_vn1oy")]
+position = Vector2(-111.99988, -62)
+rotation = -1.5519966
