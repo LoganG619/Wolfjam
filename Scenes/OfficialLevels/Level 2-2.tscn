@@ -1,15 +1,35 @@
 [gd_scene format=3 uid="uid://5v1p8p51hp0"]
 
+[ext_resource type="PackedScene" uid="uid://bjq3mtkb4w3vk" path="res://Scenes/blue_background.tscn" id="1_jkuyp"]
 [ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_wd0dk"]
 [ext_resource type="PackedScene" uid="uid://ydcm4pxcmfpi" path="res://Objects/BluePlatform.tscn" id="2_55n7i"]
+[ext_resource type="PackedScene" uid="uid://dncytelib2btv" path="res://Scenes/green_background.tscn" id="2_c3rg3"]
+[ext_resource type="PackedScene" uid="uid://b425q1d4fu3fp" path="res://Scenes/yellow_background.tscn" id="3_s760p"]
 [ext_resource type="PackedScene" uid="uid://cnhtynjckdhbk" path="res://Objects/red_spike.tscn" id="3_u438i"]
 [ext_resource type="PackedScene" uid="uid://ds8vn3xp2drog" path="res://Objects/red_platform.tscn" id="4_55n7i"]
+[ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_g6ckw"]
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_u438i"]
 [ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="6_kg55b"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="7_0d10s"]
 [ext_resource type="PackedScene" uid="uid://caxsrk0k3f24y" path="res://Objects/Stars/YellowStarFragment2.tscn" id="8_dc8u0"]
 
 [node name="Level22" type="Node2D" unique_id=1219447015]
+
+[node name="BlueBackground" parent="." unique_id=1933368043 instance=ExtResource("1_jkuyp")]
+position = Vector2(2159, 348)
+scale = Vector2(6.422, 3.348)
+
+[node name="GreenBackground" parent="." unique_id=1380163244 instance=ExtResource("2_c3rg3")]
+position = Vector2(2179.0002, 319)
+scale = Vector2(6.422, 3.348)
+
+[node name="YellowBackground" parent="." unique_id=1745360672 instance=ExtResource("3_s760p")]
+position = Vector2(2159, 311.00003)
+scale = Vector2(6.422, 3.348)
+
+[node name="RedBackground" parent="." unique_id=336213773 instance=ExtResource("4_g6ckw")]
+position = Vector2(2169, 312)
+scale = Vector2(6.422, 3.348)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_wd0dk")]
 position = Vector2(253, 259)
