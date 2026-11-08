@@ -1,3 +1,42 @@
 [gd_scene format=3 uid="uid://cxuhw6kdtkesi"]
 
+[ext_resource type="PackedScene" uid="uid://cxsckewyeq4xr" path="res://Characters/main_player.tscn" id="1_25j05"]
+[ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="2_xm4xe"]
+
 [node name="Level10" type="Node2D" unique_id=2077130365]
+
+[node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_25j05")]
+position = Vector2(-1862, -30)
+max_speed = 5000.0
+acceleration = 10000.0
+deceleration = 10000.0
+jumpVelocity = -1500.0
+
+[node name="BlackPlatform" parent="." unique_id=1485412247 instance=ExtResource("2_xm4xe")]
+position = Vector2(-1870, 202)
+
+[node name="BlackPlatform2" parent="." unique_id=1737462228 instance=ExtResource("2_xm4xe")]
+position = Vector2(-1666, 206)
+
+[node name="BlackPlatform3" parent="." unique_id=441082591 instance=ExtResource("2_xm4xe")]
+position = Vector2(-1466, 211)
+scale = Vector2(0.95829415, 1)
+
+[node name="BlackPlatform4" parent="." unique_id=1576479861 instance=ExtResource("2_xm4xe")]
+position = Vector2(-1260, 206)
+
+[node name="BlackPlatform5" parent="." unique_id=2038550653 instance=ExtResource("2_xm4xe")]
+position = Vector2(-2066, 200)
+
+[node name="BlackPlatform6" parent="." unique_id=440307226 instance=ExtResource("2_xm4xe")]
+position = Vector2(-2266, 200)
+
+[node name="BlackPlatform7" parent="." unique_id=1859043033 instance=ExtResource("2_xm4xe")]
+position = Vector2(-2472, 206)
+scale = Vector2(1.0229728, 1.7803268)
+
+[node name="BlackPlatform8" parent="." unique_id=860333465 instance=ExtResource("2_xm4xe")]
+position = Vector2(-2472, 17)
+
+[node name="BlackPlatform9" parent="." unique_id=1229931425 instance=ExtResource("2_xm4xe")]
+position = Vector2(-2472, -183)
