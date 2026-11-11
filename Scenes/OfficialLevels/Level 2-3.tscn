@@ -115,4 +115,7 @@ position = Vector2(3641, 1021)
 [node name="YellowStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("11_h1cvw")]
 position = Vector2(3647, 638)
 
+[node name="GreenPlatform6" parent="." unique_id=988032566 instance=ExtResource("3_6gr0h")]
+position = Vector2(896, 54)
+
 [connection signal="body_entered" from="YellowStarFragment3" to="YellowStarFragment3" method="_on_body_entered"]

@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://556igb2vly6s" path="res://Scenes/red_background.tscn" id="4_w0p8r"]
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_dgjii"]
 [ext_resource type="PackedScene" uid="uid://bdnuabapdq4kc" path="res://Objects/Stars/GreenStarFragment2.tscn" id="6_ebryc"]
+[ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="11_5g62d"]
 
 [node name="Level12" type="Node2D" unique_id=734921031]
 
@@ -30,7 +31,7 @@ position = Vector2(1911.9996, 359.00012)
 scale = Vector2(6.936, 4.0720005)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("2_sfdvs")]
-position = Vector2(-324, 40)
+position = Vector2(-737, 324)
 max_speed = 2500.0
 acceleration = 100000.0
 deceleration = 100000.0
@@ -99,5 +100,14 @@ position = Vector2(842, 627)
 
 [node name="GreenStarFragment2" parent="." unique_id=2076488642 instance=ExtResource("6_ebryc")]
 position = Vector2(3097, 23)
+
+[node name="BlackPlatform" parent="." unique_id=2067885750 instance=ExtResource("11_5g62d")]
+position = Vector2(-739, 523)
+
+[node name="BlackPlatform2" parent="." unique_id=1113034264 instance=ExtResource("11_5g62d")]
+position = Vector2(-946, 523)
+
+[node name="BlackPlatform3" parent="." unique_id=1698500604 instance=ExtResource("11_5g62d")]
+position = Vector2(-947, 317)
 
 [connection signal="body_entered" from="GreenStarFragment2" to="GreenStarFragment2" method="_on_body_entered"]

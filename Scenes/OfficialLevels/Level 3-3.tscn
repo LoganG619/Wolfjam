@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://deujimfkfon81" path="res://Objects/yellow_lazer.tscn" id="10_b266a"]
 [ext_resource type="PackedScene" uid="uid://bcp4h7u7v6dbm" path="res://Objects/yellow_spike.tscn" id="11_i7jpv"]
 [ext_resource type="PackedScene" uid="uid://cwxv1r2qo48n5" path="res://Objects/Stars/WhiteStarFragment3.tscn" id="16_m0kw6"]
+[ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="17_lp2fn"]
+[ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="18_pc1qy"]
 
 [node name="Level33" type="Node2D" unique_id=1241677025]
 
@@ -90,10 +92,10 @@ position = Vector2(704, -917)
 position = Vector2(704, -723)
 
 [node name="BluePlatform2" parent="." unique_id=302921494 instance=ExtResource("4_xy1ox")]
-position = Vector2(532, 193)
+position = Vector2(533, 186)
 
 [node name="BluePlatform3" parent="." unique_id=419796896 instance=ExtResource("4_xy1ox")]
-position = Vector2(726, 190)
+position = Vector2(736, 187)
 
 [node name="BluePlatform4" parent="." unique_id=928732008 instance=ExtResource("4_xy1ox")]
 position = Vector2(939, 187)
@@ -102,14 +104,14 @@ position = Vector2(939, 187)
 position = Vector2(740, -352)
 
 [node name="BlueSpike2" parent="." unique_id=1529447352 instance=ExtResource("7_1yngl")]
-position = Vector2(718, -458)
+position = Vector2(736, -516)
 rotation = 3.0606809
 
 [node name="RedPlatform3" parent="." unique_id=1124319403 instance=ExtResource("5_1yngl")]
-position = Vector2(1349, 200)
+position = Vector2(1346, 399)
 
 [node name="RedPlatform4" parent="." unique_id=81118169 instance=ExtResource("5_1yngl")]
-position = Vector2(1764, 215)
+position = Vector2(1767, 205)
 
 [node name="RedPlatform5" parent="." unique_id=911371223 instance=ExtResource("5_1yngl")]
 position = Vector2(1335, -351)
@@ -127,38 +129,36 @@ position = Vector2(1564, 207)
 position = Vector2(1550, -344)
 
 [node name="BlueSpike3" parent="." unique_id=203753464 instance=ExtResource("7_1yngl")]
-position = Vector2(1327, -459)
+position = Vector2(1347, -537)
 rotation = 3.0669858
 
 [node name="BlueSpike4" parent="." unique_id=1416062498 instance=ExtResource("7_1yngl")]
-position = Vector2(1778.0001, -501)
+position = Vector2(1777, -529)
 rotation = 3.0365114
 
 [node name="RedSpike2" parent="." unique_id=295730416 instance=ExtResource("6_i7jpv")]
-position = Vector2(1020, -473)
+position = Vector2(1011, -522)
 rotation = 3.1404464
 
 [node name="RedSpike3" parent="." unique_id=1604174451 instance=ExtResource("6_i7jpv")]
-position = Vector2(1578.0001, -452)
+position = Vector2(1571, -547)
 rotation = -3.1246765
 
 [node name="RedPlatform8" parent="." unique_id=1669167164 instance=ExtResource("5_1yngl")]
-position = Vector2(1149, 208)
+position = Vector2(1138, 188)
 
 [node name="YellowPlatform4" parent="." unique_id=1302493190 instance=ExtResource("8_i7jpv")]
-position = Vector2(2280, 21)
+position = Vector2(2380, 38)
 
 [node name="YellowPlatform5" parent="." unique_id=369093706 instance=ExtResource("8_i7jpv")]
-position = Vector2(2517, -172)
+position = Vector2(2506, -169)
 
 [node name="YellowPlatform6" parent="." unique_id=357547906 instance=ExtResource("8_i7jpv")]
-position = Vector2(2738, -352)
-
-[node name="RedPlatform9" parent="." unique_id=145559756 instance=ExtResource("5_1yngl")]
-position = Vector2(2961, -373)
+position = Vector2(2708, -357)
 
 [node name="YellowSpike" parent="." unique_id=1580863292 instance=ExtResource("11_i7jpv")]
-position = Vector2(2968, -538)
+position = Vector2(2263, -750)
+rotation = 1.5660474
 
 [node name="RedPlatform10" parent="." unique_id=1338684564 instance=ExtResource("5_1yngl")]
 position = Vector2(2287, -659)
@@ -171,10 +171,10 @@ position = Vector2(2187, -752.99994)
 rotation = -1.5987482
 
 [node name="YellowSpike3" parent="." unique_id=570484612 instance=ExtResource("11_i7jpv")]
-position = Vector2(998, -523)
+position = Vector2(1010, -522)
 
 [node name="YellowSpike4" parent="." unique_id=1212682800 instance=ExtResource("11_i7jpv")]
-position = Vector2(1342, -530)
+position = Vector2(1326, -545)
 
 [node name="YellowPlatform7" parent="." unique_id=2094268312 instance=ExtResource("8_i7jpv")]
 position = Vector2(1600, -660)
@@ -189,8 +189,8 @@ position = Vector2(497, -910)
 position = Vector2(296, -1082)
 
 [node name="YellowSpike5" parent="." unique_id=1609731860 instance=ExtResource("11_i7jpv")]
-position = Vector2(182, -1210)
-rotation = -1.6080366
+position = Vector2(204.00003, -1192)
+rotation = -1.4574263
 
 [node name="BlackPlatform4" parent="." unique_id=1740315108 instance=ExtResource("1_ovvkm")]
 position = Vector2(692, -1450)
@@ -214,26 +214,62 @@ position = Vector2(1895, -2575)
 position = Vector2(2086, -2575)
 
 [node name="BlueSpike5" parent="." unique_id=623408724 instance=ExtResource("7_1yngl")]
-position = Vector2(1102.9998, -1784)
+position = Vector2(1111.9999, -1821.9999)
 rotation = 3.113023
 
 [node name="RedSpike4" parent="." unique_id=1167507253 instance=ExtResource("6_i7jpv")]
-position = Vector2(1322.9999, -1954.9999)
+position = Vector2(1312, -1998.9999)
 rotation = 3.1404188
 
 [node name="YellowSpike6" parent="." unique_id=814784839 instance=ExtResource("11_i7jpv")]
-position = Vector2(1532.0001, -2241.9998)
+position = Vector2(1519.0001, -2199.9998)
 rotation = 3.1020854
 
 [node name="YellowSpike6" parent="YellowSpike6" unique_id=1502837356 instance=ExtResource("11_i7jpv")]
-position = Vector2(-343.45956, 308.67548)
+position = Vector2(-361.52875, 386.02216)
 rotation = 0.03695321
 
 [node name="YellowSpike6" parent="YellowSpike6/YellowSpike6" unique_id=1413729290 instance=ExtResource("11_i7jpv")]
-position = Vector2(-219.00964, 3.4405518)
+position = Vector2(-280.24442, 95.284454)
 rotation = 0.03695321
 
 [node name="WhiteStarFragment3" parent="." unique_id=2076488642 instance=ExtResource("16_m0kw6")]
 position = Vector2(2096, -2996)
+
+[node name="GreenPlatform" parent="." unique_id=697176688 instance=ExtResource("17_lp2fn")]
+position = Vector2(-67, 280)
+
+[node name="GreenPlatform2" parent="." unique_id=1326447633 instance=ExtResource("17_lp2fn")]
+position = Vector2(200, 94)
+
+[node name="GreenSpike" parent="." unique_id=934420455 instance=ExtResource("18_pc1qy")]
+position = Vector2(1360, 362)
+
+[node name="GreenPlatform3" parent="." unique_id=1693672835 instance=ExtResource("17_lp2fn")]
+position = Vector2(1973, 315)
+
+[node name="YellowPlatform14" parent="." unique_id=1735352232 instance=ExtResource("8_i7jpv")]
+position = Vector2(2179, 225)
+
+[node name="YellowPlatform15" parent="." unique_id=136465056 instance=ExtResource("8_i7jpv")]
+position = Vector2(2909, -356)
+
+[node name="GreenSpike2" parent="." unique_id=2029603915 instance=ExtResource("18_pc1qy")]
+position = Vector2(2948, -548)
+
+[node name="GreenPlatform4" parent="." unique_id=2024804173 instance=ExtResource("17_lp2fn")]
+position = Vector2(-1038, -890)
+
+[node name="GreenPlatform5" parent="." unique_id=1693626949 instance=ExtResource("17_lp2fn")]
+position = Vector2(-597, -1242)
+
+[node name="BlueSpike6" parent="." unique_id=2027538713 instance=ExtResource("7_1yngl")]
+position = Vector2(-608, -1438)
+
+[node name="YellowPlatform16" parent="." unique_id=546842522 instance=ExtResource("8_i7jpv")]
+position = Vector2(97, -1286)
+
+[node name="GreenSpike3" parent="." unique_id=905015237 instance=ExtResource("18_pc1qy")]
+position = Vector2(94, -1479)
 
 [connection signal="body_entered" from="WhiteStarFragment3" to="WhiteStarFragment3" method="_on_body_entered"]

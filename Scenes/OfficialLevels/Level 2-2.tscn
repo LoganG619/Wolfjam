@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://clpgren6fj8ha" path="res://Objects/green_spike.tscn" id="6_kg55b"]
 [ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="7_0d10s"]
 [ext_resource type="PackedScene" uid="uid://caxsrk0k3f24y" path="res://Objects/Stars/YellowStarFragment2.tscn" id="8_dc8u0"]
+[ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="13_c3rg3"]
 
 [node name="Level22" type="Node2D" unique_id=1219447015]
 
@@ -32,7 +33,7 @@ position = Vector2(2169, 312)
 scale = Vector2(9.085102, 4.736363)
 
 [node name="MainPlayer" parent="." unique_id=2050863233 instance=ExtResource("1_wd0dk")]
-position = Vector2(253, 259)
+position = Vector2(-456, 110)
 max_speed = 2500.0
 acceleration = 10000.0
 deceleration = 10000.0
@@ -91,5 +92,14 @@ scale = Vector2(42.320004, 1)
 
 [node name="YellowStarFragment2" parent="." unique_id=2076488642 instance=ExtResource("8_dc8u0")]
 position = Vector2(2201, -879)
+
+[node name="BlackPlatform" parent="." unique_id=1858911234 instance=ExtResource("13_c3rg3")]
+position = Vector2(-462, 307)
+
+[node name="BlackPlatform2" parent="." unique_id=1085528533 instance=ExtResource("13_c3rg3")]
+position = Vector2(-262, 307)
+
+[node name="BlackPlatform3" parent="." unique_id=1546794606 instance=ExtResource("13_c3rg3")]
+position = Vector2(-57, 502)
 
 [connection signal="body_entered" from="YellowStarFragment2" to="YellowStarFragment2" method="_on_body_entered"]

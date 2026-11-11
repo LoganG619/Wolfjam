@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://p2qfwy6t4u73" path="res://Objects/green_platform.tscn" id="5_rd6tg"]
 [ext_resource type="PackedScene" uid="uid://df66f40b8353u" path="res://Objects/BlueSpike.tscn" id="6_wnpk8"]
 [ext_resource type="PackedScene" uid="uid://ug3xp71d71mg" path="res://Objects/Stars/YellowStarFragment1.tscn" id="7_rd6tg"]
+[ext_resource type="PackedScene" uid="uid://dwmyrs6wm0axh" path="res://Objects/death_box.tscn" id="12_075g7"]
+[ext_resource type="PackedScene" uid="uid://bb3a8kgtd23km" path="res://Objects/black_platform.tscn" id="13_pno1v"]
 
 [node name="Level21" type="Node2D" unique_id=403041392]
 position = Vector2(-31, -3)
@@ -105,5 +107,12 @@ rotation = -1.5552586
 
 [node name="YellowStarFragment1" parent="." unique_id=2076488642 instance=ExtResource("7_rd6tg")]
 position = Vector2(2707, -598)
+
+[node name="DeathBox" parent="." unique_id=1682432023 instance=ExtResource("12_075g7")]
+position = Vector2(1200, 2197)
+scale = Vector2(40.84001, 1)
+
+[node name="BlackPlatform" parent="." unique_id=352780817 instance=ExtResource("13_pno1v")]
+position = Vector2(-130, 545)
 
 [connection signal="body_entered" from="YellowStarFragment1" to="YellowStarFragment1" method="_on_body_entered"]
